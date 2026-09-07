@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsere IT-Dienstleistungen - Winterthur Tech Partners</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .service-block { padding: 60px 0; border-bottom: 1px solid #e5e7eb; }
+        .service-block:nth-child(odd) { background-color: var(--light-gray-color); }
+        .service-block h2 { font-size: 2.2rem; margin-bottom: 30px; }
+        .service-list { list-style-type: none; padding-left: 0; }
+        .service-list li { background: white; border-radius: 8px; padding: 20px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .service-list h4 { margin-bottom: 5px; font-size: 1.2rem; display: flex; align-items: center; gap: 10px; }
+        .service-list h4 i { color: var(--primary-color); }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">Winterthur Tech Partners</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html#cybersecurity">Cybersecurity</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="header-contact">
+                    <span>Call: [Ihre Telefonnummer]</span>
+                    <a href="contact.html" class="btn btn-primary">Kostenlose Erstberatung</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header" style="background-color: var(--light-gray-color); padding: 60px 0;">
+            <div class="container section-title">
+                <h2>Unsere Dienstleistungen im Detail</h2>
+                <p>Ein umfassender Überblick über unser Lösungsportfolio.</p>
+            </div>
+        </section>
+
+        <!-- IT Support & Wartung -->
+        <section id="it-support" class="service-block">
+            <div class="container">
+                <h2><i class="fa-solid fa-screwdriver-wrench"></i> IT-Support &amp; Wartung</h2>
+                <ul class="service-list">
+                    <li><h4><i class="fa-solid fa-triangle-exclamation"></i> Fehlerbehebung (Troubleshooting)</h4><p>Schnelle und effiziente Lösung von Hard- und Softwareproblemen, um Ihre Ausfallzeiten zu minimieren.</p></li>
+                    <li><h4><i class="fa-solid fa-desktop"></i> Geräte-Setup &amp; Installation</h4><p>Professionelle Einrichtung neuer Computer, Drucker und Netzwerkgeräte für einen reibungslosen Start.</p></li>
+                    <li><h4><i class="fa-solid fa-compact-disc"></i> System-Imaging &amp; Wiederherstellung</h4><p>Erstellung von Systemabbildern (z.B. mit Acronis) für schnelle Wiederherstellung und einheitliche Konfigurationen.</p></li>
+                    <li><h4><i class="fa-solid fa-memory"></i> RAM- &amp; Hardware-Upgrades</h4><p>Leistungssteigerung Ihrer bestehenden Geräte durch gezielte Aufrüstung von Arbeitsspeicher, Festplatten (SSD) etc.</p></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Cybersecurity -->
+        <section id="cybersecurity" class="service-block">
+            <div class="container">
+                <h2><i class="fa-solid fa-shield-halved"></i> Cybersicherheit</h2>
+                <ul class="service-list">
+                    <li><h4><i class="fa-solid fa-shield-virus"></i> Antivirus &amp; Endpoint Security</h4><p>Installation und Verwaltung führender Antiviren- und Sicherheitsprogramme zum Schutz Ihrer Endgeräte.</p></li>
+                    <li><h4><i class="fa-solid fa-fire-wall"></i> Firewall-Konfiguration</h4><p>Einrichtung und Konfiguration von Sicherheits-Firewalls zum Schutz Ihres gesamten Netzwerks vor externen Bedrohungen.</p></li>
+                    <li><h4><i class="fa-solid fa-database"></i> Datensicherung &amp; Backup-Lösungen</h4><p>Implementierung automatisierter Backup-Strategien (lokal und in der Cloud) zum Schutz vor Datenverlust.</p></li>
+                    <li><h4><i class="fa-solid fa-lock"></i> Datenverschlüsselung</h4><p>Beratung und Implementierung von Verschlüsselungslösungen (z.B. BitLocker, VeraCrypt) für sensible Daten.</p></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Device Lifecycle Management -->
+        <section id="lifecycle" class="service-block">
+            <div class="container">
+                <h2><i class="fa-solid fa-arrows-rotate"></i> Geräte-Lebenszyklus-Management</h2>
+                <ul class="service-list">
+                    <li><h4><i class="fa-solid fa-shopping-cart"></i> Beschaffung &amp; Beratung</h4><p>Herstellerneutrale Beratung bei der Anschaffung neuer Hardware und Software, die genau zu Ihren Anforderungen passt.</p></li>
+                    <li><h4><i class="fa-solid fa-award"></i> Garantie-Registrierung &amp; -Verfolgung</h4><p>Wir kümmern uns um die Registrierung Ihrer neuen Geräte und verfolgen den Garantiestatus für Sie.</p></li>
+                    <li><h4><i class="fa-solid fa-trash-alt"></i> Sichere Entsorgung</h4><p>Fachgerechte und datenschutzkonforme Löschung und Entsorgung Ihrer alten Geräte.</p></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Strategic Consulting -->
+        <section id="consulting" class="service-block">
+            <div class="container">
+                <h2><i class="fa-solid fa-chart-line"></i> Strategische Beratung</h2>
+                <ul class="service-list">
+                    <li><h4><i class="fa-solid fa-magnifying-glass-chart"></i> IT-Infrastruktur-Analyse</h4><p>Umfassende Analyse Ihrer aktuellen IT-Umgebung und Aufzeigen von Optimierungspotenzial.</p></li>
+                    <li><h4><i class="fa-solid fa-map-signs"></i> Digitalisierungs-Roadmap</h4><p>Gemeinsame Erarbeitung eines strategischen Plans für Ihre digitale Transformation und Zukunftssicherheit.</p></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">Winterthur Tech Partners</div>
+                    <p class="footer-tagline">IT-Support &amp; Cybersicherheit für KMU in Winterthur.</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 Winterthur Tech Partners &middot; [Ihre Telefonnummer] &middot; [Ihre E-Mail-Adresse]
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

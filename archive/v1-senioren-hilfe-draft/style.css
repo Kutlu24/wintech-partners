@@ -1,0 +1,225 @@
+:root {
+    --primary-color: #005A9C; /* Ein vertrauenswürdiges Blau */
+    --secondary-color: #F4F4F4; /* Heller Hintergrund */
+    --dark-color: #333333;
+    --light-color: #FFFFFF;
+    --font-family: 'Lato', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    font-size: 18px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header & Navigation */
+header {
+    background: var(--light-color);
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav a {
+    color: var(--dark-color);
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+.cta-button-nav {
+    background: var(--primary-color);
+    color: var(--light-color);
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.cta-button-nav:hover {
+    background: #004a80;
+    color: var(--light-color);
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--secondary-color);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background: var(--primary-color);
+    color: var(--light-color);
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #004a80;
+}
+
+/* Services Section */
+.services {
+    padding: 80px 0;
+    background: var(--light-color);
+}
+
+.services h2, .about h2, .contact h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.service-item img {
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.service-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+    background: var(--secondary-color);
+}
+
+.about-flex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 2;
+    text-align: left;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    text-align: center;
+    background: var(--primary-color);
+    color: var(--light-color);
+}
+
+.contact h2, .contact p {
+    color: var(--light-color);
+}
+
+.contact-info {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+/* Footer */
+footer {
+    background: var(--dark-color);
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text {
+        text-align: center;
+    }
+    header .container {
+        flex-direction: column;
+    }
+    nav ul {
+        margin-top: 15px;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+}
