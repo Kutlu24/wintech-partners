@@ -1,33 +1,14 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt - Winterthur Tech Partners</title>
+    <title>Contact - Winterthur Tech Partners</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 15px;
-            border-radius: 8px;
-            border: 1px solid #d1d5db;
-            font-family: inherit;
-            font-size: 1rem;
-        }
-        .contact-form textarea {
-            min-height: 150px;
-            resize: vertical;
-        }
-        .contact-form button {
-            width: fit-content;
-        }
-    </style>
 </head>
 <body>
 
@@ -39,23 +20,23 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="services.html#cybersecurity">Cybersecurity</a></li>
+                    <li><a href="cybersecurity.html">Cybersecurity</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <div class="header-contact">
-                    <span>Call: [Ihre Telefonnummer]</span>
-                    <a href="contact.html" class="btn btn-primary">Kostenlose Erstberatung</a>
+                    <span>Call: [your phone number]</span>
+                    <a href="contact.html" class="btn btn-primary">Free First Consultation</a>
                 </div>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="page-header" style="background-color: var(--light-gray-color); padding: 60px 0;">
+        <section class="page-header" style="padding: 60px 0;">
             <div class="container">
                 <div class="section-title">
-                    <h2>Kontaktieren Sie uns</h2>
-                    <p>Wir freuen uns darauf, von Ihnen zu hören. Vereinbaren Sie eine kostenlose Beratung.</p>
+                    <h2>Get in touch</h2>
+                    <p>I'd be glad to hear from you. Set up a free consultation.</p>
                 </div>
             </div>
         </section>
@@ -64,40 +45,40 @@
             <div class="container">
                 <div class="experience-grid">
                     <div class="contact-form-wrapper">
-                        <h3>Senden Sie uns eine Nachricht</h3>
-                        <p style="margin-bottom: 30px;">Füllen Sie das Formular aus und wir werden uns so schnell wie möglich bei Ihnen melden.</p>
+                        <h3>Send a message</h3>
+                        <p style="margin-bottom: 30px;">Fill in the form and I'll get back to you as soon as I can.</p>
                         <form action="#" method="POST" class="contact-form">
-                            <input type="text" name="name" placeholder="Ihr Name" required>
-                            <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
-                            <input type="text" name="subject" placeholder="Betreff">
-                            <textarea name="message" placeholder="Ihre Nachricht" required></textarea>
-                            <button type="submit" class="btn btn-primary">Nachricht senden</button>
+                            <input type="text" name="name" placeholder="Your name" required>
+                            <input type="email" name="email" placeholder="Your email address" required>
+                            <input type="text" name="subject" placeholder="Subject">
+                            <textarea name="message" placeholder="Your message" required></textarea>
+                            <button type="submit" class="btn btn-primary">Send message</button>
                         </form>
                     </div>
 
-                    <div class="contact-details" style="background-color: #f9fafb; padding: 40px; border-radius: 12px;">
-                        <h3>Kontaktinformationen</h3>
-                        <p style="margin-bottom: 30px;">Sie können uns auch direkt über die folgenden Kanäle erreichen.</p>
+                    <div class="contact-details" style="background-color: var(--surface); border: 1px solid var(--border); padding: 40px; border-radius: 12px;">
+                        <h3>Contact details</h3>
+                        <p style="margin-bottom: 30px;">You can also reach me directly through the channels below.</p>
 
                         <div class="feature-item">
                             <i class="fa-solid fa-phone"></i>
                             <div>
-                                <h4>Anrufen</h4>
-                                <p>[Ihre Telefonnummer]</p>
+                                <h4>Call</h4>
+                                <p>[your phone number]</p>
                             </div>
                         </div>
                          <div class="feature-item">
                             <i class="fa-solid fa-envelope"></i>
                             <div>
-                                <h4>E-Mail</h4>
-                                <p>[Ihre E-Mail-Adresse]</p>
+                                <h4>Email</h4>
+                                <p>[your email address]</p>
                             </div>
                         </div>
                          <div class="feature-item">
                             <i class="fa-solid fa-location-dot"></i>
                             <div>
-                                <h4>Servicegebiet</h4>
-                                <p>Winterthur und Umgebung, Schweiz</p>
+                                <h4>Service area</h4>
+                                <p>Winterthur and the surrounding area, Switzerland</p>
                             </div>
                         </div>
                     </div>
@@ -111,7 +92,7 @@
             <div class="footer-grid">
                 <div>
                     <div class="footer-brand">Winterthur Tech Partners</div>
-                    <p class="footer-tagline">IT-Support &amp; Cybersicherheit für KMU in Winterthur.</p>
+                    <p class="footer-tagline">IT support &amp; cybersecurity for SMEs in Winterthur.</p>
                 </div>
                 <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
@@ -121,7 +102,7 @@
                 </ul>
             </div>
             <div class="footer-bottom">
-                &copy; 2024 Winterthur Tech Partners &middot; [Ihre Telefonnummer] &middot; [Ihre E-Mail-Adresse]
+                &copy; 2024 Winterthur Tech Partners &middot; [your phone number] &middot; [your email address]
             </div>
         </div>
     </footer>

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winterthur Tech Partners | IT-Lösungen &amp; Cybersecurity</title>
+    <title>Winterthur Tech Partners | IT Support &amp; Cybersecurity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -17,12 +20,12 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="services.html#cybersecurity">Cybersecurity</a></li>
+                    <li><a href="cybersecurity.html">Cybersecurity</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <div class="header-contact">
-                    <span>Call: [Ihre Telefonnummer]</span>
-                    <a href="contact.html" class="btn btn-primary">Kostenlose Erstberatung</a>
+                    <span>Call: [your phone number]</span>
+                    <a href="contact.html" class="btn btn-primary">Free First Consultation</a>
                 </div>
             </nav>
         </div>
@@ -32,58 +35,59 @@
         <section class="hero-section">
             <div class="container">
                 <div class="hero-content">
+                    <span class="eyebrow">IT support &amp; cybersecurity · Winterthur</span>
                     <h1>
-                        Ihre Technologie.
-                        <span class="highlight">Sicher.</span>
-                        <span class="highlight">Effizient.</span>
-                        <span class="highlight">Sorgenfrei.</span>
+                        Your technology.
+                        <span class="highlight">Secure.</span>
+                        <span class="highlight">Efficient.</span>
+                        <span class="highlight">One less thing to worry about.</span>
                     </h1>
                     <p>
-                        Professioneller IT-Support und Cybersicherheits-Beratung für KMU, Praxen und Kanzleien in Winterthur und Umgebung. Konzentrieren Sie sich auf Ihr Geschäft – wir kümmern uns um Ihre IT.
+                        Professional IT support and cybersecurity consulting for SMEs, medical practices, and law firms in and around Winterthur. Focus on your business — I'll take care of your IT.
                     </p>
                     <div class="hero-buttons">
-                        <a href="contact.html" class="btn btn-primary">Kostenlose Erstberatung anfordern</a>
-                        <a href="services.html" class="btn btn-secondary">Unsere Leistungen</a>
+                        <a href="contact.html" class="btn btn-primary">Request your free consultation</a>
+                        <a href="services.html" class="btn btn-secondary">See what I offer</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="services-section" style="background-color: white; padding-top: 80px;">
+        <section class="services-section" style="background-color: var(--surface); padding-top: 80px;">
             <div class="container">
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-                        <h3>IT-Support &amp; Wartung</h3>
-                        <p>Schnelle Hilfe bei Problemen, regelmässige Wartung für maximale Leistung.</p>
-                        <a href="services.html#it-support" class="btn btn-primary" style="margin-top: auto;">Mehr erfahren</a>
+                        <h3>IT Support &amp; Maintenance</h3>
+                        <p>Fast help when something breaks, and regular maintenance so it breaks less often.</p>
+                        <a href="services.html#it-support" class="btn btn-primary" style="margin-top: auto;">Learn more</a>
                     </div>
                     <div class="service-card">
                         <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                        <h3>Cybersicherheit</h3>
-                        <p>Schutz vor Viren, Ransomware und Datenverlust. Wir machen Ihr Unternehmen sicher.</p>
-                        <a href="services.html#cybersecurity" class="btn btn-primary" style="margin-top: auto;">Mehr erfahren</a>
+                        <h3>Cybersecurity</h3>
+                        <p>Protection against viruses, ransomware, and data loss. I make your business genuinely harder to hit.</p>
+                        <a href="cybersecurity.html" class="btn btn-primary" style="margin-top: auto;">Learn more</a>
                     </div>
                     <div class="service-card">
                         <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
-                        <h3>Strategische Beratung</h3>
-                        <p>Hardware-Upgrades, Cloud-Lösungen, Effizienzsteigerung. Wir planen Ihre technologische Zukunft.</p>
-                        <a href="services.html#consulting" class="btn btn-primary" style="margin-top: auto;">Mehr erfahren</a>
+                        <h3>Strategic Consulting</h3>
+                        <p>Hardware upgrades, cloud migration, efficiency gains. I plan your technology's next few years, not just today.</p>
+                        <a href="services.html#consulting" class="btn btn-primary" style="margin-top: auto;">Learn more</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="experience-section" style="background-color: var(--light-gray-color);">
+        <section class="experience-section" style="background-color: var(--paper);">
             <div class="container">
                  <div class="experience-grid">
                     <div class="experience-content">
-                        <h2>Erfahrung, der Sie vertrauen können.</h2>
-                        <p>"Als erfahrener Professional mit über 15 Jahren Erfahrung in strategischen und regulierten Umfeldern biete ich mehr als nur technische Lösungen. Ich biete Verlässlichkeit, strategisches Denken und einen Partner auf Augenhöhe, der Ihre geschäftlichen Bedürfnisse versteht."</p>
-                        <a href="about.html" class="btn btn-primary" style="margin-top: 20px;">Mehr über mich</a>
+                        <h2>Experience you can rely on.</h2>
+                        <p>"With over 15 years in strategic and regulated environments, I offer more than technical fixes. I offer reliability, strategic thinking, and a partner who actually understands what your business needs."</p>
+                        <a href="about.html" class="btn btn-primary" style="margin-top: 20px;">More about me</a>
                     </div>
                     <div class="experience-image">
-                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="Erfahrener Berater">
+                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="An experienced IT consultant at work">
                     </div>
                 </div>
             </div>
@@ -91,10 +95,10 @@
 
         <section class="final-cta-section">
             <div class="container">
-                <h2>Bereit, Ihr Unternehmen zu sichern?</h2>
-                <p>Lassen Sie uns besprechen, wie wir Ihre Technologiesysteme schützen und optimieren können.</p>
+                <h2>Ready to secure your business?</h2>
+                <p>Let's talk about how to protect and streamline your technology systems.</p>
                 <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary-light">Kostenlose Beratung anfordern</a>
+                    <a href="contact.html" class="btn btn-primary-light">Request a free consultation</a>
                 </div>
             </div>
         </section>
@@ -105,7 +109,7 @@
             <div class="footer-grid">
                 <div>
                     <div class="footer-brand">Winterthur Tech Partners</div>
-                    <p class="footer-tagline">IT-Support &amp; Cybersicherheit für KMU in Winterthur.</p>
+                    <p class="footer-tagline">IT support &amp; cybersecurity for SMEs in Winterthur.</p>
                 </div>
                 <ul class="footer-links">
                     <li><a href="index.html">Home</a></li>
@@ -115,7 +119,7 @@
                 </ul>
             </div>
             <div class="footer-bottom">
-                &copy; 2024 Winterthur Tech Partners &middot; [Ihre Telefonnummer] &middot; [Ihre E-Mail-Adresse]
+                &copy; 2024 Winterthur Tech Partners &middot; [your phone number] &middot; [your email address]
             </div>
         </div>
     </footer>
