@@ -325,3 +325,20 @@ p { color: var(--text-muted); }
     h1 { font-size: 2rem; }
     .header-contact span { display: none; }
 }
+
+.nav-links a.active {
+    color: var(--brass-dark);
+    font-weight: 600;
+    box-shadow: inset 0 -2px 0 var(--brass);
+}
+
+::selection { background: var(--brass-soft); color: var(--ink); }
+
+.value-card { transition: all var(--transition); }
+.value-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+
+.btn:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--brass);
+    outline-offset: 2px;
+}
