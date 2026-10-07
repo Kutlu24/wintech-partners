@@ -2,65 +2,121 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://wintech-partners.onrender.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://images.pexels.com https://wintech-partners.onrender.com; connect-src 'self'; form-action 'self'">
     <meta name="description" content="Contact Winterthur Tech Partners - book a free first consultation for IT support and cybersecurity in Winterthur and the surrounding area.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1c1a16">
     <title>Contact - Winterthur Tech Partners</title>
+    <link rel="canonical" href="https://wintech-partners.onrender.com/contact.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Winterthur Tech Partners">
+    <meta property="og:title" content="Contact - Winterthur Tech Partners">
+    <meta property="og:description" content="Contact Winterthur Tech Partners - book a free first consultation for IT support and cybersecurity in Winterthur and the surrounding area.">
+    <meta property="og:url" content="https://wintech-partners.onrender.com/contact.html">
+    <meta property="og:image" content="https://wintech-partners.onrender.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Winterthur Tech Partners - IT support and cybersecurity in Winterthur">
+    <meta property="og:locale" content="en_GB">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact - Winterthur Tech Partners">
+    <meta name="twitter:description" content="Book a free first consultation for IT support and cybersecurity in Winterthur and the surrounding area.">
+    <meta name="twitter:image" content="https://wintech-partners.onrender.com/og-image.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha384-t1nt8BQoYMLFN5p42tRAtuAAFQaCQODekUVeKKZrEnEyp4H2R0RHFz0KWpmj7i8g" crossorigin="anonymous">
+    <script src="main.js" defer></script>
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Winterthur Tech Partners",
+  "url": "https://wintech-partners.onrender.com/contact.html",
+  "description": "Free first consultation for IT support and cybersecurity in Winterthur.",
+  "about": {
+    "@type": "ProfessionalService",
+    "name": "Winterthur Tech Partners",
+    "telephone": "+41772053834",
+    "email": "wintechpartners@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Winterthur",
+      "addressCountry": "CH"
+    }
+  }
+}
+    </script>
 </head>
 <body>
 
     <header class="main-header">
         <div class="container">
-             <nav class="main-nav">
+             <nav class="main-nav" aria-label="Main navigation">
                 <a href="index.html" class="logo"><img src="logo-wtp.png" alt="" width="91" height="34" class="logo-mark">Winterthur Tech Partners</a>
-                <ul class="nav-links">
+                <div class="header-contact">
+                    <a href="tel:+41772053834" class="header-phone"><i class="fa-solid fa-phone"></i><span class="phone-text">Call: +41 77 205 38 34</span></a>
+                    <a href="contact.html" class="btn btn-primary">Free First Consultation</a>
+                </div>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+                    <i class="fa-solid fa-bars nav-icon-open" aria-hidden="true"></i>
+                    <i class="fa-solid fa-xmark nav-icon-close" aria-hidden="true"></i>
+                </button>
+                <ul class="nav-links" id="nav-menu">
+                    <li class="nav-cta-item"><a href="contact.html" class="btn btn-primary">Free First Consultation</a></li>
+
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="cybersecurity.html">Cybersecurity</a></li>
                     <li><a href="contact.html" class="active">Contact</a></li>
                 </ul>
-                <div class="header-contact">
-                    <a href="tel:+41772053834" class="header-phone"><i class="fa-solid fa-phone"></i><span class="phone-text">Call: +41 77 205 38 34</span></a>
-                    <a href="contact.html" class="btn btn-primary">Free First Consultation</a>
-                </div>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="page-header" style="padding: 60px 0;">
+        <section class="page-header">
             <div class="container">
                 <div class="section-title">
-                    <h2>Get in touch</h2>
+                    <h1>Get in touch</h1>
                     <p>I'd be glad to hear from you. Set up a free consultation.</p>
                 </div>
             </div>
         </section>
 
-        <section class="contact-section" style="padding: 80px 0;">
+        <section class="contact-section">
             <div class="container">
                 <div class="experience-grid">
                     <div class="contact-form-wrapper">
                         <h3>Send a message</h3>
-                        <p style="margin-bottom: 30px;">Fill in the form and I'll get back to you as soon as I can.</p>
-                        <form action="#" method="POST" class="contact-form">
-                            <input type="text" name="name" placeholder="Your name" required>
-                            <input type="email" name="email" placeholder="Your email address" required>
-                            <input type="text" name="subject" placeholder="Subject">
-                            <textarea name="message" placeholder="Your message" required></textarea>
+                        <p class="mb-30">Fill in the form and I'll get back to you as soon as I can.</p>
+                        <form action="contact.html" method="get" class="contact-form">
+                            <label class="visually-hidden" for="cf-name">Your name</label>
+                            <input id="cf-name" type="text" name="name" placeholder="Your name" autocomplete="name" maxlength="120" required>
+                            <label class="visually-hidden" for="cf-email">Your email address</label>
+                            <input id="cf-email" type="email" name="email" placeholder="Your email address" autocomplete="email" maxlength="200" required>
+                            <label class="visually-hidden" for="cf-subject">Subject</label>
+                            <input id="cf-subject" type="text" name="subject" placeholder="Subject" maxlength="200">
+                            <label class="visually-hidden" for="cf-message">Your message</label>
+                            <textarea id="cf-message" name="message" placeholder="Your message" maxlength="5000" required></textarea>
+                            <div class="hp-field" aria-hidden="true">
+                                <label for="cf-company">Company</label>
+                                <input id="cf-company" type="text" name="company" tabindex="-1" autocomplete="off">
+                            </div>
                             <button type="submit" class="btn btn-primary">Send message</button>
+                            <p class="form-status" role="status" aria-live="polite"></p>
+                            <p class="form-note">No form backend: sending opens your own email app with the message pre-filled. Or write directly to <a href="mailto:wintechpartners@gmail.com">wintechpartners@gmail.com</a>.</p>
                         </form>
                     </div>
 
-                    <div class="contact-details" style="background-color: var(--surface); border: 1px solid var(--border); padding: 40px; border-radius: 12px;">
+                    <div class="contact-details">
                         <h3>Contact details</h3>
-                        <p style="margin-bottom: 30px;">You can also reach me directly through the channels below.</p>
+                        <p class="mb-30">You can also reach me directly through the channels below.</p>
 
                         <div class="feature-item">
                             <i class="fa-solid fa-phone"></i>

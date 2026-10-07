@@ -2,33 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://wintech-partners.onrender.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://images.pexels.com https://wintech-partners.onrender.com; connect-src 'self'; form-action 'self'">
     <meta name="description" content="IT support, cybersecurity, digitalization and automation, customer service chatbots and digital roadmaps for SMEs, medical practices and law firms in and around Winterthur, Switzerland.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1c1a16">
     <title>Winterthur Tech Partners | IT Support &amp; Cybersecurity</title>
+    <link rel="canonical" href="https://wintech-partners.onrender.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Winterthur Tech Partners">
+    <meta property="og:title" content="Winterthur Tech Partners | IT Support &amp; Cybersecurity">
+    <meta property="og:description" content="IT support, cybersecurity, digitalization and automation for SMEs, medical practices and law firms in and around Winterthur, Switzerland.">
+    <meta property="og:url" content="https://wintech-partners.onrender.com/">
+    <meta property="og:image" content="https://wintech-partners.onrender.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Winterthur Tech Partners - IT support and cybersecurity in Winterthur">
+    <meta property="og:locale" content="en_GB">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Winterthur Tech Partners | IT Support &amp; Cybersecurity">
+    <meta name="twitter:description" content="IT support, cybersecurity, digitalization and automation for SMEs and professional practices in Winterthur.">
+    <meta name="twitter:image" content="https://wintech-partners.onrender.com/og-image.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha384-t1nt8BQoYMLFN5p42tRAtuAAFQaCQODekUVeKKZrEnEyp4H2R0RHFz0KWpmj7i8g" crossorigin="anonymous">
+    <script src="main.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "@id": "https://wintech-partners.onrender.com/#organization",
+      "name": "Winterthur Tech Partners",
+      "description": "IT support, cybersecurity, digitalization and automation for SMEs, medical practices and law firms in Winterthur, Switzerland.",
+      "url": "https://wintech-partners.onrender.com/",
+      "image": "https://wintech-partners.onrender.com/og-image.png",
+      "logo": "https://wintech-partners.onrender.com/logo-wtp.png",
+      "telephone": "+41772053834",
+      "email": "wintechpartners@gmail.com",
+      "address": { "@type": "PostalAddress", "addressLocality": "Winterthur", "addressCountry": "CH" },
+      "areaServed": [
+        { "@type": "City", "name": "Winterthur" },
+        { "@type": "Country", "name": "Switzerland" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "IT services",
+        "itemListElement": [
+          { "@type": "Offer", "position": 1, "itemOffered": { "@type": "Service", "name": "IT Support & Maintenance", "url": "https://wintech-partners.onrender.com/services.html#it-support" } },
+          { "@type": "Offer", "position": 2, "itemOffered": { "@type": "Service", "name": "Cybersecurity", "url": "https://wintech-partners.onrender.com/cybersecurity.html" } },
+          { "@type": "Offer", "position": 3, "itemOffered": { "@type": "Service", "name": "Digitalization & Automation", "url": "https://wintech-partners.onrender.com/services.html#digitalization" } },
+          { "@type": "Offer", "position": 4, "itemOffered": { "@type": "Service", "name": "Customer Service Chatbot", "url": "https://wintech-partners.onrender.com/services.html#chatbot" } },
+          { "@type": "Offer", "position": 5, "itemOffered": { "@type": "Service", "name": "Digital Roadmap", "url": "https://wintech-partners.onrender.com/services.html#consulting" } },
+          { "@type": "Offer", "position": 6, "itemOffered": { "@type": "Service", "name": "Device Lifecycle Management", "url": "https://wintech-partners.onrender.com/services.html#lifecycle" } }
+        ]
+      }
+    }
+    </script>
 </head>
 <body>
 
     <header class="main-header">
         <div class="container">
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Main navigation">
                 <a href="index.html" class="logo"><img src="logo-wtp.png" alt="" width="91" height="34" class="logo-mark">Winterthur Tech Partners</a>
-                <ul class="nav-links">
+                <div class="header-contact">
+                    <a href="tel:+41772053834" class="header-phone"><i class="fa-solid fa-phone"></i><span class="phone-text">Call: +41 77 205 38 34</span></a>
+                    <a href="contact.html" class="btn btn-primary">Free First Consultation</a>
+                </div>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+                    <i class="fa-solid fa-bars nav-icon-open" aria-hidden="true"></i>
+                    <i class="fa-solid fa-xmark nav-icon-close" aria-hidden="true"></i>
+                </button>
+                <ul class="nav-links" id="nav-menu">
+                    <li class="nav-cta-item"><a href="contact.html" class="btn btn-primary">Free First Consultation</a></li>
+
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="cybersecurity.html">Cybersecurity</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="header-contact">
-                    <a href="tel:+41772053834" class="header-phone"><i class="fa-solid fa-phone"></i><span class="phone-text">Call: +41 77 205 38 34</span></a>
-                    <a href="contact.html" class="btn btn-primary">Free First Consultation</a>
-                </div>
             </nav>
         </div>
     </header>
@@ -88,59 +145,60 @@
             </div>
         </section>
 
-        <section class="services-section" style="background-color: var(--surface); padding-top: 80px;">
+        <section class="services-section" aria-labelledby="services-heading">
             <div class="container">
+                <h2 class="visually-hidden" id="services-heading">Our services</h2>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
                         <h3>IT Support &amp; Maintenance</h3>
                         <p>Fast help when something breaks, and regular maintenance so it breaks less often.</p>
-                        <a href="services.html#it-support" class="btn btn-primary" style="margin-top: auto;">Learn more</a>
+                        <a href="services.html#it-support" class="btn btn-primary">Learn more</a>
                     </div>
                     <div class="service-card">
                         <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
                         <h3>Cybersecurity</h3>
                         <p>Protection against viruses, ransomware, and data loss. I make your business genuinely harder to hit.</p>
-                        <a href="cybersecurity.html" class="btn btn-primary" style="margin-top: auto;">Learn more</a>
+                        <a href="cybersecurity.html" class="btn btn-primary">Learn more</a>
                     </div>
                     <div class="service-card">
                         <div class="card-icon"><i class="fa-solid fa-gears"></i></div>
                         <h3>Digitalization &amp; Automation</h3>
                         <p>Paperless processes and automated workflows, so your team spends its time on customers instead of copy-paste.</p>
-                        <a href="services.html#digitalization" class="btn btn-primary" style="margin-top: auto;">Learn more</a>
+                        <a href="services.html#digitalization" class="btn btn-primary">Learn more</a>
                     </div>
                     <div class="service-card">
                         <div class="card-icon"><i class="fa-solid fa-comments"></i></div>
                         <h3>Customer Service Chatbot</h3>
                         <p>A multilingual assistant on your website or messenger that answers routine questions and captures every enquiry.</p>
-                        <a href="services.html#chatbot" class="btn btn-primary" style="margin-top: auto;">Learn more</a>
+                        <a href="services.html#chatbot" class="btn btn-primary">Learn more</a>
                     </div>
                     <div class="service-card">
                         <div class="card-icon"><i class="fa-solid fa-map-signs"></i></div>
                         <h3>Digital Roadmap</h3>
                         <p>A phased plan for your transformation: what to do first, what it costs, and what it actually brings you.</p>
-                        <a href="services.html#consulting" class="btn btn-primary" style="margin-top: auto;">Learn more</a>
+                        <a href="services.html#consulting" class="btn btn-primary">Learn more</a>
                     </div>
                     <div class="service-card">
                         <div class="card-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
                         <h3>Device Lifecycle Management</h3>
                         <p>Purchasing advice, warranty tracking and secure disposal - your hardware, managed end to end.</p>
-                        <a href="services.html#lifecycle" class="btn btn-primary" style="margin-top: auto;">Learn more</a>
+                        <a href="services.html#lifecycle" class="btn btn-primary">Learn more</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="experience-section" style="background-color: var(--paper);">
+        <section class="experience-section section-paper">
             <div class="container">
                  <div class="experience-grid">
                     <div class="experience-content">
                         <h2>Experience you can rely on.</h2>
                         <p>"With over 15 years in strategic and regulated environments, I offer more than technical fixes. I offer reliability, strategic thinking, and a partner who actually understands what your business needs."</p>
-                        <a href="about.html" class="btn btn-primary" style="margin-top: 20px;">More about me</a>
+                        <a href="about.html" class="btn btn-primary">More about me</a>
                     </div>
                     <div class="experience-image">
-                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="An experienced IT consultant at work">
+                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="An experienced IT consultant at work" width="1260" height="750" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>

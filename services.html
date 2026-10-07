@@ -2,42 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://wintech-partners.onrender.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://images.pexels.com https://wintech-partners.onrender.com; connect-src 'self'; form-action 'self'">
     <meta name="description" content="IT support, cybersecurity, device lifecycle management, digitalization and automation, customer service chatbots and digital roadmaps - the full service overview of Winterthur Tech Partners.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1c1a16">
     <title>Our IT Services - Winterthur Tech Partners</title>
+    <link rel="canonical" href="https://wintech-partners.onrender.com/services.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Winterthur Tech Partners">
+    <meta property="og:title" content="Our IT Services - Winterthur Tech Partners">
+    <meta property="og:description" content="IT support, cybersecurity, device lifecycle management, digitalization and automation, customer service chatbots and digital roadmaps - the full service overview of Winterthur Tech Partners.">
+    <meta property="og:url" content="https://wintech-partners.onrender.com/services.html">
+    <meta property="og:image" content="https://wintech-partners.onrender.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Winterthur Tech Partners - IT support and cybersecurity in Winterthur">
+    <meta property="og:locale" content="en_GB">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Our IT Services - Winterthur Tech Partners">
+    <meta name="twitter:description" content="The full service overview of Winterthur Tech Partners: IT support, cybersecurity, digitalization, chatbots and digital roadmaps.">
+    <meta name="twitter:image" content="https://wintech-partners.onrender.com/og-image.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha384-t1nt8BQoYMLFN5p42tRAtuAAFQaCQODekUVeKKZrEnEyp4H2R0RHFz0KWpmj7i8g" crossorigin="anonymous">
+    <script src="main.js" defer></script>
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "IT services from Winterthur Tech Partners",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "IT Support & Maintenance",
+      "url": "https://wintech-partners.onrender.com/services.html#it-support"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Cybersecurity",
+      "url": "https://wintech-partners.onrender.com/services.html#cybersecurity"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Device Lifecycle Management",
+      "url": "https://wintech-partners.onrender.com/services.html#lifecycle"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Digitalization & Automation",
+      "url": "https://wintech-partners.onrender.com/services.html#digitalization"
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "name": "Customer Service Chatbot",
+      "url": "https://wintech-partners.onrender.com/services.html#chatbot"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "Digital Roadmap",
+      "url": "https://wintech-partners.onrender.com/services.html#consulting"
+    }
+  ]
+}
+    </script>
 </head>
 <body>
 
     <header class="main-header">
         <div class="container">
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Main navigation">
                 <a href="index.html" class="logo"><img src="logo-wtp.png" alt="" width="91" height="34" class="logo-mark">Winterthur Tech Partners</a>
-                <ul class="nav-links">
+                <div class="header-contact">
+                    <a href="tel:+41772053834" class="header-phone"><i class="fa-solid fa-phone"></i><span class="phone-text">Call: +41 77 205 38 34</span></a>
+                    <a href="contact.html" class="btn btn-primary">Free First Consultation</a>
+                </div>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+                    <i class="fa-solid fa-bars nav-icon-open" aria-hidden="true"></i>
+                    <i class="fa-solid fa-xmark nav-icon-close" aria-hidden="true"></i>
+                </button>
+                <ul class="nav-links" id="nav-menu">
+                    <li class="nav-cta-item"><a href="contact.html" class="btn btn-primary">Free First Consultation</a></li>
+
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html" class="active">Services</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="cybersecurity.html">Cybersecurity</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="header-contact">
-                    <a href="tel:+41772053834" class="header-phone"><i class="fa-solid fa-phone"></i><span class="phone-text">Call: +41 77 205 38 34</span></a>
-                    <a href="contact.html" class="btn btn-primary">Free First Consultation</a>
-                </div>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="page-header" style="padding: 60px 0;">
+        <section class="page-header">
             <div class="container">
                 <div class="section-title">
-                    <h2>Our services, in detail</h2>
+                    <h1>Our services, in detail</h1>
                     <p>A full overview of what's included in each part of the practice - from keeping the lights on to digitalizing how your business runs.</p>
                 </div>
                 <nav class="page-navigation" aria-label="Service sections">
@@ -76,7 +147,7 @@
                     <li><h4><i class="fa-solid fa-database"></i> Data Backup Solutions</h4><p>Automated backup strategies (local and cloud) to protect you against data loss.</p></li>
                     <li><h4><i class="fa-solid fa-lock"></i> Data Encryption</h4><p>Advice on and implementation of encryption (e.g. BitLocker, VeraCrypt) for sensitive data.</p></li>
                 </ul>
-                <p style="margin-top: 20px;"><a href="cybersecurity.html" class="btn btn-secondary">See the full cybersecurity page →</a></p>
+                <p class="mt-20"><a href="cybersecurity.html" class="btn btn-secondary">See the full cybersecurity page →</a></p>
             </div>
         </section>
 

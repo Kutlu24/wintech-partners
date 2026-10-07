@@ -2,41 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://wintech-partners.onrender.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://images.pexels.com https://wintech-partners.onrender.com; connect-src 'self'; form-action 'self'">
     <meta name="description" content="Winterthur Tech Partners: over 15 years of IT experience in strategic and regulated environments - reliability, security, and a partner who thinks ahead.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1c1a16">
     <title>About - Winterthur Tech Partners</title>
+    <link rel="canonical" href="https://wintech-partners.onrender.com/about.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Winterthur Tech Partners">
+    <meta property="og:title" content="About - Winterthur Tech Partners">
+    <meta property="og:description" content="Winterthur Tech Partners: over 15 years of IT experience in strategic and regulated environments - reliability, security, and a partner who thinks ahead.">
+    <meta property="og:url" content="https://wintech-partners.onrender.com/about.html">
+    <meta property="og:image" content="https://wintech-partners.onrender.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Winterthur Tech Partners - IT support and cybersecurity in Winterthur">
+    <meta property="og:locale" content="en_GB">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About - Winterthur Tech Partners">
+    <meta name="twitter:description" content="Over 15 years of IT experience in strategic and regulated environments - reliability, security, and a partner who thinks ahead.">
+    <meta name="twitter:image" content="https://wintech-partners.onrender.com/og-image.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha384-t1nt8BQoYMLFN5p42tRAtuAAFQaCQODekUVeKKZrEnEyp4H2R0RHFz0KWpmj7i8g" crossorigin="anonymous">
+    <script src="main.js" defer></script>
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Winterthur Tech Partners",
+  "url": "https://wintech-partners.onrender.com/about.html",
+  "description": "Over 15 years of IT experience in strategic and regulated environments.",
+  "about": {
+    "@type": "ProfessionalService",
+    "name": "Winterthur Tech Partners",
+    "telephone": "+41772053834",
+    "email": "wintechpartners@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Winterthur",
+      "addressCountry": "CH"
+    }
+  }
+}
+    </script>
 </head>
 <body>
 
     <header class="main-header">
         <div class="container">
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Main navigation">
                 <a href="index.html" class="logo"><img src="logo-wtp.png" alt="" width="91" height="34" class="logo-mark">Winterthur Tech Partners</a>
-                <ul class="nav-links">
+                <div class="header-contact">
+                    <a href="tel:+41772053834" class="header-phone"><i class="fa-solid fa-phone"></i><span class="phone-text">Call: +41 77 205 38 34</span></a>
+                    <a href="contact.html" class="btn btn-primary">Free First Consultation</a>
+                </div>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+                    <i class="fa-solid fa-bars nav-icon-open" aria-hidden="true"></i>
+                    <i class="fa-solid fa-xmark nav-icon-close" aria-hidden="true"></i>
+                </button>
+                <ul class="nav-links" id="nav-menu">
+                    <li class="nav-cta-item"><a href="contact.html" class="btn btn-primary">Free First Consultation</a></li>
+
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about.html" class="active">About</a></li>
                     <li><a href="cybersecurity.html">Cybersecurity</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="header-contact">
-                    <a href="tel:+41772053834" class="header-phone"><i class="fa-solid fa-phone"></i><span class="phone-text">Call: +41 77 205 38 34</span></a>
-                    <a href="contact.html" class="btn btn-primary">Free First Consultation</a>
-                </div>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="page-header" style="padding: 60px 0;">
+        <section class="page-header">
             <div class="container section-title">
-                <h2>Your partner for stable, secure IT</h2>
+                <h1>Your partner for stable, secure IT</h1>
                 <p>More than technology — a partnership built on trust.</p>
             </div>
         </section>
@@ -50,30 +96,30 @@
                         <p>My goal isn't just working IT - it's the confidence that your technology is a solid foundation for what you're trying to build. I listen, understand what you're actually trying to achieve, and build solutions that work today and hold up tomorrow.</p>
                     </div>
                     <div class="experience-image">
-                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="Founder of Winterthur Tech Partners">
+                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="Founder of Winterthur Tech Partners" width="1260" height="750" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="values-section" style="padding: 80px 0; background-color: var(--surface);">
+        <section class="values-section">
             <div class="container">
                 <div class="section-title">
                     <h2>What I work by</h2>
                 </div>
                 <div class="services-grid">
-                    <div class="value-card" style="text-align: center; padding: 30px 20px;">
-                        <i class="fa-solid fa-handshake fa-2x" style="color: var(--brass); margin-bottom: 20px;"></i>
+                    <div class="value-card">
+                        <i class="fa-solid fa-handshake fa-2x"></i>
                         <h3>A real partner</h3>
                         <p>I see myself as part of your team. Your success is what drives this.</p>
                     </div>
-                    <div class="value-card" style="text-align: center; padding: 30px 20px;">
-                        <i class="fa-solid fa-user-check fa-2x" style="color: var(--brass); margin-bottom: 20px;"></i>
+                    <div class="value-card">
+                        <i class="fa-solid fa-user-check fa-2x"></i>
                         <h3>Reliable</h3>
                         <p>You can count on me being reachable, and on commitments being kept.</p>
                     </div>
-                     <div class="value-card" style="text-align: center; padding: 30px 20px;">
-                        <i class="fa-solid fa-brain fa-2x" style="color: var(--brass); margin-bottom: 20px;"></i>
+                     <div class="value-card">
+                        <i class="fa-solid fa-brain fa-2x"></i>
                         <h3>Strategic</h3>
                         <p>I don't just fix problems - I think ahead and plan for where your business is going.</p>
                     </div>

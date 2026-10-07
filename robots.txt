@@ -1,0 +1,6 @@
+# Winterthur Tech Partners - robots.txt
+User-agent: *
+Allow: /
+Disallow: /archive/
+
+Sitemap: https://wintech-partners.onrender.com/sitemap.xml

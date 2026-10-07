@@ -2,88 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://wintech-partners.onrender.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://images.pexels.com https://wintech-partners.onrender.com; connect-src 'self'; form-action 'self'">
     <meta name="description" content="Proactive cybersecurity for SMEs in Winterthur: endpoint protection, firewalls, backups, email security, staff training and security audits.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#1c1a16">
     <title>Cybersecurity - Winterthur Tech Partners</title>
+    <link rel="canonical" href="https://wintech-partners.onrender.com/cybersecurity.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Winterthur Tech Partners">
+    <meta property="og:title" content="Cybersecurity - Winterthur Tech Partners">
+    <meta property="og:description" content="Proactive cybersecurity for SMEs in Winterthur: endpoint protection, firewalls, backups, email security, staff training and security audits.">
+    <meta property="og:url" content="https://wintech-partners.onrender.com/cybersecurity.html">
+    <meta property="og:image" content="https://wintech-partners.onrender.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Winterthur Tech Partners - IT support and cybersecurity in Winterthur">
+    <meta property="og:locale" content="en_GB">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cybersecurity - Winterthur Tech Partners">
+    <meta name="twitter:description" content="Endpoint protection, firewalls, backups, email security, staff training and audits for SMEs in Winterthur.">
+    <meta name="twitter:image" content="https://wintech-partners.onrender.com/og-image.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha384-t1nt8BQoYMLFN5p42tRAtuAAFQaCQODekUVeKKZrEnEyp4H2R0RHFz0KWpmj7i8g" crossorigin="anonymous">
+    <script src="main.js" defer></script>
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Cybersecurity for SMEs in Winterthur",
+  "description": "Proactive, layered cybersecurity: endpoint protection, firewalls, backups, email security, staff training and security audits.",
+  "provider": {
+    "@type": "ProfessionalService",
+    "name": "Winterthur Tech Partners",
+    "telephone": "+41772053834",
+    "email": "wintechpartners@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Winterthur",
+      "addressCountry": "CH"
+    }
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Winterthur"
+  },
+  "url": "https://wintech-partners.onrender.com/cybersecurity.html"
+}
+    </script>
 </head>
 <body>
 
     <header class="main-header">
         <div class="container">
-             <nav class="main-nav">
+             <nav class="main-nav" aria-label="Main navigation">
                 <a href="index.html" class="logo"><img src="logo-wtp.png" alt="" width="91" height="34" class="logo-mark">Winterthur Tech Partners</a>
-                <ul class="nav-links">
+                <div class="header-contact">
+                    <a href="tel:+41772053834" class="header-phone"><i class="fa-solid fa-phone"></i><span class="phone-text">Call: +41 77 205 38 34</span></a>
+                    <a href="contact.html" class="btn btn-primary">Free Consultation</a>
+                </div>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+                    <i class="fa-solid fa-bars nav-icon-open" aria-hidden="true"></i>
+                    <i class="fa-solid fa-xmark nav-icon-close" aria-hidden="true"></i>
+                </button>
+                <ul class="nav-links" id="nav-menu">
+                    <li class="nav-cta-item"><a href="contact.html" class="btn btn-primary">Free First Consultation</a></li>
+
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="cybersecurity.html" class="active">Cybersecurity</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="header-contact">
-                    <a href="tel:+41772053834" class="header-phone"><i class="fa-solid fa-phone"></i><span class="phone-text">Call: +41 77 205 38 34</span></a>
-                    <a href="contact.html" class="btn btn-primary">Free Consultation</a>
-                </div>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="page-header" style="padding: 60px 0;">
+        <section class="page-header">
             <div class="container">
                 <div class="section-title">
-                    <h2>Real protection for your business</h2>
+                    <h1>Real protection for your business</h1>
                     <p>Proactive cybersecurity to protect the data your business actually depends on.</p>
                 </div>
             </div>
         </section>
 
-        <section class="cyber-content" style="padding: 80px 0;">
+        <section class="cyber-content">
             <div class="container">
                 <div class="experience-grid">
                     <div class="experience-content">
                         <h3>The threat is real, and growing</h3>
                         <p>Attacks on small and medium businesses keep increasing. One successful breach can mean serious financial loss, reputational damage, and downtime you can't easily recover from. It's not really a question of whether you'll be targeted anymore - it's when. That's why a proactive, layered security strategy isn't optional.</p>
                         <p>I combine prevention, detection, and fast response into one approach - built to make your business genuinely resilient, not just check a compliance box.</p>
-                        <a href="contact.html" class="btn btn-primary" style="margin-top: 20px;">Request a security check</a>
+                        <a href="contact.html" class="btn btn-primary">Request a security check</a>
                     </div>
                     <div class="experience-image">
-                        <img src="https://images.pexels.com/photos/5380649/pexels-photo-5380649.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="Cybersecurity threat monitoring" style="border-radius: 12px;">
+                        <img src="https://images.pexels.com/photos/5380649/pexels-photo-5380649.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="Cybersecurity threat monitoring" width="1260" height="750" loading="lazy" decoding="async">
                     </div>
                 </div>
 
-                <div class="section-title" style="margin-top: 80px;">
+                <div class="section-title mt-80">
                     <h3>What's included</h3>
                 </div>
 
-                <div class="services-grid" style="text-align: left;">
+                <div class="services-grid">
                     <div class="service-card">
-                        <h4><i class="fa-solid fa-shield-virus" style="margin-right: 10px; color: var(--brass);"></i> Threat Protection</h4>
+                        <h4><i class="fa-solid fa-shield-virus"></i> Threat Protection</h4>
                         <p>Modern antivirus and anti-malware software, tuned to catch both known and emerging threats.</p>
                     </div>
                     <div class="service-card">
-                        <h4><i class="fa-solid fa-network-wired" style="margin-right: 10px; color: var(--brass);"></i> Network Security</h4>
+                        <h4><i class="fa-solid fa-network-wired"></i> Network Security</h4>
                         <p>Firewall setup and ongoing management, to keep unauthorized access out of your network.</p>
                     </div>
                     <div class="service-card">
-                        <h4><i class="fa-solid fa-database" style="margin-right: 10px; color: var(--brass);"></i> Data Backup</h4>
+                        <h4><i class="fa-solid fa-database"></i> Data Backup</h4>
                         <p>Automated, secure backups of your critical business data, for fast recovery when something goes wrong.</p>
                     </div>
                     <div class="service-card">
-                        <h4><i class="fa-solid fa-envelope-circle-check" style="margin-right: 10px; color: var(--brass);"></i> Email Security</h4>
+                        <h4><i class="fa-solid fa-envelope-circle-check"></i> Email Security</h4>
                         <p>Protection against phishing, spam, and malicious attachments - before they reach an inbox.</p>
                     </div>
                     <div class="service-card">
-                        <h4><i class="fa-solid fa-user-shield" style="margin-right: 10px; color: var(--brass);"></i> Staff Training</h4>
+                        <h4><i class="fa-solid fa-user-shield"></i> Staff Training</h4>
                         <p>Getting your team familiar with the latest scam patterns and real best practices, not just a checklist.</p>
                     </div>
                     <div class="service-card">
-                        <h4><i class="fa-solid fa-file-shield" style="margin-right: 10px; color: var(--brass);"></i> Security Audits</h4>
+                        <h4><i class="fa-solid fa-file-shield"></i> Security Audits</h4>
                         <p>Regular review of your systems for real vulnerabilities, with concrete recommendations - not a generic report.</p>
                     </div>
                 </div>
