@@ -134,6 +134,8 @@ p { color: var(--text-muted); }
     font-family: var(--font-mono);
     color: var(--text-muted);
 }
+.header-contact .header-mail { color: var(--text-muted); transition: color var(--transition); }
+.header-contact .header-mail:hover { color: var(--brass-dark); }
 
 /* ─── HERO ────────────────────────────────────────── */
 .hero-section {
@@ -170,7 +172,7 @@ p { color: var(--text-muted); }
 /* ─── SERVICES / CARDS ────────────────────────────── */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 24px;
     margin-top: 40px;
 }
@@ -242,6 +244,9 @@ p { color: var(--text-muted); }
     font-weight: 500;
     font-size: 0.9rem;
 }
+.page-header .page-navigation { margin-top: 22px; margin-bottom: 0; }
+.page-header .page-navigation a { color: var(--brass-soft); }
+.page-header .page-navigation a:hover { color: var(--white); }
 
 /* ─── CONTACT FORM ────────────────────────────────── */
 .contact-form { display: flex; flex-direction: column; gap: 20px; }
@@ -316,6 +321,8 @@ p { color: var(--text-muted); }
     color: var(--text-faint);
     text-align: center;
 }
+.footer-bottom a { color: var(--text-faint); transition: color var(--transition); }
+.footer-bottom a:hover { color: var(--brass); }
 
 /* ─── RESPONSIVE ──────────────────────────────────── */
 @media (max-width: 800px) {
@@ -324,6 +331,7 @@ p { color: var(--text-muted); }
     .hero-section { padding: 60px 0 50px; }
     h1 { font-size: 2rem; }
     .header-contact span { display: none; }
+    .header-contact .header-mail { display: none; }
 }
 
 .nav-links a.active {
