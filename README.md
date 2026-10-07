@@ -8,7 +8,7 @@ A 5-page marketing website concept for **Winterthur Tech Partners**, a proposed 
 
 A static business website mockup: home, services, about, cybersecurity, and contact pages, built around a three-pillar service offering (IT support & maintenance, cybersecurity, strategic/digital-transformation consulting). The content follows the original project brief for the business concept.
 
-Contact details are filled in: phone `+41 77 205 38 34` (a `tel:` link in the header, contact page and footer), email `kutluhn.yilmaz@gmail.com`, and click-to-chat links for WhatsApp, Signal and Telegram on the contact page.
+Contact details are filled in: phone `+41 77 205 38 34` (a `tel:` link in the header, contact page and footer), email `wintechpartners@gmail.com`, and click-to-chat links for WhatsApp, Signal and Telegram on the contact page.
 
 ## Tech stack
 
