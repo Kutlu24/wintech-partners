@@ -104,12 +104,15 @@ p { color: var(--text-muted); }
 }
 
 .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     font-family: var(--font-display);
     font-weight: 600;
     font-size: 1.2rem;
     color: var(--ink);
 }
-.logo::before { content: "⌁ "; color: var(--brass); }
+.logo-mark { width: 30px; height: 30px; display: block; flex: none; }
 
 .nav-links {
     display: flex;
@@ -327,7 +330,16 @@ p { color: var(--text-muted); }
     margin-bottom: 24px;
 }
 
-.footer-brand { font-family: var(--font-display); font-weight: 600; color: var(--paper); margin-bottom: 6px; }
+.footer-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--paper);
+    margin-bottom: 6px;
+}
+.footer-mark { width: 24px; height: 24px; display: block; flex: none; }
 .footer-tagline { font-size: 0.9rem; }
 
 .footer-links {
