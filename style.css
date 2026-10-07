@@ -134,8 +134,15 @@ p { color: var(--text-muted); }
     font-family: var(--font-mono);
     color: var(--text-muted);
 }
-.header-contact .header-mail { color: var(--text-muted); transition: color var(--transition); }
-.header-contact .header-mail:hover { color: var(--brass-dark); }
+.header-contact .header-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-muted);
+    transition: color var(--transition);
+}
+.header-contact .header-phone i { color: var(--brass-dark); font-size: 0.9em; }
+.header-contact .header-phone:hover { color: var(--brass-dark); }
 
 /* ─── HERO ────────────────────────────────────────── */
 .hero-section {
@@ -274,6 +281,25 @@ p { color: var(--text-muted); }
 .feature-item i { color: var(--brass); font-size: 1.05rem; margin-top: 3px; }
 .feature-item h4 { font-size: 0.95rem; margin-bottom: 2px; font-family: var(--font-body); color: var(--ink); }
 .feature-item p { color: var(--text); font-size: 0.95rem; }
+.feature-item p a { color: var(--brass-dark); font-weight: 600; }
+.feature-item p a:hover { color: var(--brass); }
+
+.msg-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.msg-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 15px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all var(--transition);
+}
+.msg-links a:hover { border-color: var(--brass); color: var(--brass-dark); box-shadow: var(--shadow); }
+.msg-links i { color: var(--brass); font-size: 1rem; margin-top: 0; }
 
 /* ─── FINAL CTA ───────────────────────────────────── */
 .final-cta-section {
@@ -331,7 +357,8 @@ p { color: var(--text-muted); }
     .hero-section { padding: 60px 0 50px; }
     h1 { font-size: 2rem; }
     .header-contact span { display: none; }
-    .header-contact .header-mail { display: none; }
+    .header-contact .header-phone .phone-text { display: none; }
+    .header-contact .header-phone { padding: 6px; }
 }
 
 .nav-links a.active {
