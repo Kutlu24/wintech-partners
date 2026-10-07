@@ -8,7 +8,7 @@ A 5-page marketing website concept for **Winterthur Tech Partners**, a proposed 
 
 A static business website mockup: home, services, about, cybersecurity, and contact pages, built around a three-pillar service offering (IT support & maintenance, cybersecurity, strategic/digital-transformation consulting). The content follows the original project brief for the business concept.
 
-Real contact details (phone, email, street address) have been replaced with `[placeholder]` text before publishing — fill in your own before deploying live.
+Contact details are filled in: the site shows a single address, `kutluhn.yilmaz@gmail.com` (header, contact page, footer), and deliberately no phone number.
 
 ## Tech stack
 
