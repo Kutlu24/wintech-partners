@@ -3,7 +3,7 @@ services:
   - type: web
     name: wintech-partners
     runtime: static
-    buildCommand: rm -rf public && mkdir -p public && cp index.html services.html about.html cybersecurity.html contact.html style.css logo.svg public/ && cp -R archive public/
+    buildCommand: rm -rf public && mkdir -p public && cp index.html services.html about.html cybersecurity.html contact.html style.css logo.svg logo-wtp.png public/ && cp -R archive public/
     staticPublishPath: ./public
     autoDeployTrigger: commit
     headers:
