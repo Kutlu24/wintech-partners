@@ -1,4 +1,5 @@
-/* Winterthur Tech Partners — navigation toggle + contact form helper.
+/* Winterthur Tech Partners — navigation toggle + contact form helper
+   (shared by the /de, /fr and /en pages).
    External file on purpose: the site ships a strict Content-Security-Policy
    (script-src 'self'), so no inline scripts or event handlers. */
 (function () {
@@ -15,7 +16,8 @@
     function setMenu(open) {
         if (!toggle || !menu) return;
         toggle.setAttribute("aria-expanded", open ? "true" : "false");
-        toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+        toggle.setAttribute("aria-label", (open ? toggle.dataset.labelClose : toggle.dataset.labelOpen) ||
+            (open ? "Close menu" : "Open menu"));
         menu.classList.toggle("is-open", open);
     }
 
@@ -52,11 +54,17 @@
     var form = document.querySelector(".contact-form");
     if (form) {
         var status = form.querySelector(".form-status");
+        /* Per-language strings live on the form (data-*), so this file stays
+           language-neutral; English is the fallback. */
+        var msgThanks = form.dataset.msgThanks || "Thanks — your message has been received.";
+        var msgOpening = form.dataset.msgOpening ||
+            "Opening your email app… if nothing happens, write to wintechpartners@gmail.com.";
+        var defaultSubject = form.dataset.defaultSubject || "Website enquiry";
         form.addEventListener("submit", function (e) {
             e.preventDefault();
 
             var hp = form.querySelector('[name="company"]');
-            if (hp && hp.value) { setFormStatus("Thanks — your message has been received."); return; }
+            if (hp && hp.value) { setFormStatus(msgThanks); return; }
 
             if (!form.reportValidity()) return;
 
@@ -67,10 +75,10 @@
 
             var body = message + "\n\n— " + name + " (" + email + ")";
             var href = "mailto:wintechpartners@gmail.com" +
-                "?subject=" + encodeURIComponent(subject || "Website enquiry") +
+                "?subject=" + encodeURIComponent(subject || defaultSubject) +
                 "&body=" + encodeURIComponent(body);
 
-            setFormStatus("Opening your email app… if nothing happens, write to wintechpartners@gmail.com.");
+            setFormStatus(msgOpening);
             window.location.href = href;
         });
 

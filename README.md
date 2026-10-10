@@ -10,6 +10,10 @@ A static business website mockup: home, services, about, cybersecurity, and cont
 
 Contact details are filled in: phone `+41 77 205 38 34` (a `tel:` link in the header, contact page and footer), email `wintechpartners@gmail.com`, and click-to-chat links for WhatsApp, Signal and Telegram on the contact page.
 
+## Languages
+
+The site is published in German (default), French and English: `de/`, `fr/`, `en/`, each with the same five pages. The bare domain and the old root URLs redirect to `/de/` (see `routes` in `render.yaml`; root `index.html` is a meta-refresh fallback). Pages carry `hreflang` alternates and a DE/FR/EN switcher in the navigation; `sitemap.xml` lists all 15 URLs with alternates. Per-language strings that JavaScript needs (menu labels, contact-form messages) are `data-*` attributes in the HTML, so `main.js` is shared. German uses Swiss spelling (no ß).
+
 ## Tech stack
 
 Plain HTML and CSS, no framework, no build step. Icons via [Font Awesome](https://fontawesome.com/) (CDN).

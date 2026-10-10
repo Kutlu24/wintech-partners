@@ -615,3 +615,33 @@ textarea:focus-visible {
     * { transition: none !important; animation: none !important; }
     .service-card:hover, .value-card:hover { transform: none; }
 }
+
+/* Language switcher (last item of the nav list on every page) */
+.nav-links .lang-switch {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    margin-left: 4px;
+    padding-left: 16px;
+    border-left: 1px solid var(--border);
+}
+.nav-links .lang-switch a {
+    font-size: 0.86rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+.nav-links .lang-switch a[aria-current="true"] {
+    color: var(--brass-dark);
+    background: var(--brass-soft);
+}
+@media (max-width: 900px) {
+    html.js .nav-links .lang-switch {
+        margin: 4px 0 0;
+        padding: 10px 6px 4px;
+        border-left: 0;
+        border-top: 1px solid var(--border);
+    }
+    html.js .nav-links .lang-switch a { display: inline-block; padding: 8px 14px; font-size: 0.95rem; }
+}

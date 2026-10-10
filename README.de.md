@@ -10,6 +10,10 @@ Ein statisches Website-Mockup: Startseite, Services, Über uns, Cybersecurity un
 
 Echte Kontaktdaten (Telefon, E-Mail, Adresse) wurden vor der Veröffentlichung durch `[Platzhalter]`-Text ersetzt — vor einem echten Livegang bitte eigene Daten eintragen.
 
+## Sprachen
+
+Die Website erscheint auf Deutsch (Standard), Französisch und Englisch: `de/`, `fr/`, `en/`, jeweils mit denselben fünf Seiten. Die Domain ohne Pfad und die alten Root-URLs leiten auf `/de/` weiter (`routes` in `render.yaml`; die `index.html` im Root ist ein Meta-Refresh-Fallback). Alle Seiten haben `hreflang`-Alternativen und einen DE/FR/EN-Umschalter in der Navigation; `sitemap.xml` listet alle 15 URLs mit Alternativen. Sprachabhängige Texte für JavaScript (Menü-Labels, Formularmeldungen) stehen als `data-*`-Attribute im HTML, `main.js` ist daher gemeinsam. Deutsch folgt der Schweizer Schreibweise (kein ß).
+
 ## Technik
 
 Reines HTML und CSS, kein Framework, kein Build-Prozess. Icons über [Font Awesome](https://fontawesome.com/) (CDN).

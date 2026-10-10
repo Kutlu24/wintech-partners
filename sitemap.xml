@@ -1,28 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wintech-partners.onrender.com/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <loc>https://wintech-partners.onrender.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/"/>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://wintech-partners.onrender.com/services.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <loc>https://wintech-partners.onrender.com/de/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/services.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/services.html"/>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://wintech-partners.onrender.com/cybersecurity.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <loc>https://wintech-partners.onrender.com/de/cybersecurity.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/cybersecurity.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/cybersecurity.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/cybersecurity.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/cybersecurity.html"/>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://wintech-partners.onrender.com/about.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <loc>https://wintech-partners.onrender.com/de/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/about.html"/>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>yearly</changefreq>
   </url>
   <url>
-    <loc>https://wintech-partners.onrender.com/contact.html</loc>
-    <lastmod>2026-10-07</lastmod>
+    <loc>https://wintech-partners.onrender.com/de/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/contact.html"/>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://wintech-partners.onrender.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/"/>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://wintech-partners.onrender.com/fr/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/services.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/services.html"/>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://wintech-partners.onrender.com/fr/cybersecurity.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/cybersecurity.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/cybersecurity.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/cybersecurity.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/cybersecurity.html"/>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://wintech-partners.onrender.com/fr/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/about.html"/>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://wintech-partners.onrender.com/fr/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/contact.html"/>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://wintech-partners.onrender.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/"/>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://wintech-partners.onrender.com/en/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/services.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/services.html"/>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://wintech-partners.onrender.com/en/cybersecurity.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/cybersecurity.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/cybersecurity.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/cybersecurity.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/cybersecurity.html"/>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://wintech-partners.onrender.com/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/about.html"/>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://wintech-partners.onrender.com/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/contact.html"/>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>yearly</changefreq>
   </url>
 </urlset>
