@@ -626,6 +626,9 @@ textarea:focus-visible {
     border-left: 1px solid var(--border);
 }
 .nav-links .lang-switch a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     font-size: 0.86rem;
     font-weight: 600;
     letter-spacing: 0.06em;
@@ -644,4 +647,15 @@ textarea:focus-visible {
         border-top: 1px solid var(--border);
     }
     html.js .nav-links .lang-switch a { display: inline-block; padding: 8px 14px; font-size: 0.95rem; }
+}
+.lang-switch .flag {
+    width: 20px;
+    height: 14px;
+    border-radius: 2px;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 1px rgba(28, 26, 22, 0.2);
+}
+@media (max-width: 900px) {
+    html.js .nav-links .lang-switch a { display: inline-flex; gap: 8px; }
+    .lang-switch .flag { width: 26px; height: 18px; }
 }
