@@ -10,6 +10,10 @@ A static business website mockup: home, services, about, cybersecurity, and cont
 
 Contact details are filled in: phone `+41 77 205 38 34` (a `tel:` link in the header, contact page and footer), email `wintechpartners@gmail.com`, and click-to-chat links for WhatsApp, Signal and Telegram on the contact page.
 
+## Research page
+
+`{de,fr,en}/research.html` presents the three independent, non-commercial research tools run alongside the practice (Worldora, Global Monitor, Worldora Intelligence) and links to them; the navigation, footer and sitemap include it. Those sites link back and credit "Winterthur Tech Partners, Zürich, Switzerland" as operator (contact `wintechpartners@gmail.com`).
+
 ## Languages
 
 The site is published in German (default), French and English: `de/`, `fr/`, `en/`, each with the same five pages. The bare domain and the old root URLs redirect to `/de/` (see `routes` in `render.yaml`; root `index.html` is a meta-refresh fallback). Pages carry `hreflang` alternates and a DE/FR/EN switcher in the navigation; `sitemap.xml` lists all 15 URLs with alternates. Per-language strings that JavaScript needs (menu labels, contact-form messages) are `data-*` attributes in the HTML, so `main.js` is shared. German uses Swiss spelling (no ß).

@@ -135,4 +135,13 @@
     <lastmod>2026-10-10</lastmod>
     <changefreq>yearly</changefreq>
   </url>
+  <url>
+    <loc>https://wintech-partners.onrender.com/de/research.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/research.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/research.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/research.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/research.html"/>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
