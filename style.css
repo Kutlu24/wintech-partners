@@ -659,3 +659,5 @@ textarea:focus-visible {
     html.js .nav-links .lang-switch a { display: inline-flex; gap: 8px; }
     .lang-switch .flag { width: 26px; height: 18px; }
 }
+
+.section-more { text-align: center; margin-top: 24px; }
