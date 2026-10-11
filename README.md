@@ -10,9 +10,9 @@ A static business website mockup: home, services, about, cybersecurity, and cont
 
 Contact details are filled in: phone `+41 77 205 38 34` (a `tel:` link in the header, contact page and footer), email `wintechpartners@gmail.com`, and click-to-chat links for WhatsApp, Signal and Telegram on the contact page.
 
-## Research page
+## Research projects
 
-`{de,fr,en}/research.html` presents the three independent, non-commercial research tools run alongside the practice (Worldora, Global Monitor, Worldora Intelligence) and links to them; the navigation, footer and sitemap include it. Those sites link back and credit "Winterthur Tech Partners, Zürich, Switzerland" as operator (contact `wintechpartners@gmail.com`).
+The research tools (Worldora, Worldora Intelligence, Global Monitor) live in the Geo Analysis Hub: https://global-monitor-render-relay.onrender.com/hub/ . The home page cards and `/{de,fr,en}/research.html` forward there (Render redirect routes; `research.html` is only a meta-refresh fallback and is not published).
 
 ## Languages
 

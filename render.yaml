@@ -3,7 +3,7 @@ services:
   - type: web
     name: wintech-partners
     runtime: static
-    buildCommand: rm -rf public && mkdir -p public && cp 404.html style.css main.js logo.svg logo-wtp.png og-image.png robots.txt sitemap.xml public/ && cp -R de fr en archive public/
+    buildCommand: rm -rf public && mkdir -p public && cp 404.html style.css main.js logo.svg logo-wtp.png og-image.png robots.txt sitemap.xml public/ && cp -R de fr en archive public/ && rm -f public/de/research.html public/fr/research.html public/en/research.html
     staticPublishPath: ./public
     autoDeployTrigger: commit
     # German is the default language: the bare domain and the old English
@@ -30,6 +30,15 @@ services:
       - type: redirect
         source: /contact.html
         destination: /de/contact.html
+      - type: redirect
+        source: /de/research.html
+        destination: https://global-monitor-render-relay.onrender.com/hub/
+      - type: redirect
+        source: /fr/research.html
+        destination: https://global-monitor-render-relay.onrender.com/hub/
+      - type: redirect
+        source: /en/research.html
+        destination: https://global-monitor-render-relay.onrender.com/hub/
     headers:
       - path: /*
         name: X-Content-Type-Options
