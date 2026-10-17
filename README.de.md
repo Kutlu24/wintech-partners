@@ -8,7 +8,9 @@ Ein 5-seitiges Website-Konzept für **Winterthur Tech Partners**, eine geplante 
 
 Ein statisches Website-Mockup: Startseite, Services, Über uns, Cybersecurity und Kontakt, aufgebaut um ein Drei-Säulen-Angebot (IT-Support & Wartung, Cybersicherheit, strategische Beratung/digitale Transformation). Der Inhalt folgt dem ursprünglichen Projektbriefing für das Geschäftskonzept.
 
-Echte Kontaktdaten (Telefon, E-Mail, Adresse) wurden vor der Veröffentlichung durch `[Platzhalter]`-Text ersetzt — vor einem echten Livegang bitte eigene Daten eintragen.
+Echte Kontaktdaten (Telefon `+41 77 205 38 34`, E-Mail, Adresse) sind eingetragen. Die Kontaktseite und der Website-Assistent weisen darauf hin, dass dieselbe Nummer auch über WhatsApp, Signal und Telegram erreichbar ist — also sowohl telefonisch als auch per Nachricht.
+
+Auf allen Seiten liegt ein kleiner Website-Assistent (`chatbot.js`): ein regelbasieter FAQ-Bot auf DE/FR/EN, der Fragen zu Leistungen, Preisen, Cybersicherheit und Erreichbarkeit beantwortet und die Besucher zu diesen Kontakt-Kanälen führt. Er ist bewusst lokal und ohne Fremddependencies — die Website liefert eine strikte Content-Security-Policy (`script-src 'self'`), weshalb weder ein entferntes Modell noch ein Drittanbieter-Widget möglich sind, und keines nötig ist. Er ist zugleich ein funktionierender Demo-Beitrag zum Angebot „Kundenservice-Chatbot“ auf der Services-Seite.
 
 ## Sprachen
 
