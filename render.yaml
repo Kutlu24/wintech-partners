@@ -28,6 +28,9 @@ services:
         source: /cybersecurity.html
         destination: /de/cybersecurity.html
       - type: redirect
+        source: /onsite.html
+        destination: /de/onsite.html
+      - type: redirect
         source: /contact.html
         destination: /de/contact.html
       - type: redirect

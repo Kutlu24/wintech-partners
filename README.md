@@ -1,12 +1,12 @@
 # Winterthur Tech Partners — Business Website Concept
 
-A 5-page marketing website concept for **Winterthur Tech Partners**, a proposed IT-support and cybersecurity consulting practice for small and medium businesses (SMEs), medical practices, and law firms in Winterthur, Switzerland.
+A 6-page marketing website concept for **Winterthur Tech Partners**, a proposed IT-support and cybersecurity consulting practice for small and medium businesses (SMEs), medical practices, and law firms in Winterthur, Switzerland.
 
 🇩🇪 German version: [README.de.md](README.de.md)
 
 ## What it is
 
-A static business website mockup: home, services, about, cybersecurity, and contact pages, built around a three-pillar service offering (IT support & maintenance, cybersecurity, strategic/digital-transformation consulting). The content follows the original project brief for the business concept.
+A static business website mockup: home, services, about, cybersecurity, on-site services, and contact pages, built around a three-pillar service offering (IT support & maintenance, cybersecurity, strategic/digital-transformation consulting). The content follows the original project brief for the business concept.
 
 Contact details are filled in: phone `+41 77 205 38 34` (a `tel:` link in the header, contact page and footer), email `wintechpartners@gmail.com`, and click-to-chat links for WhatsApp, Signal and Telegram on the contact page. The contact page and the site assistant note that the same number also works on WhatsApp, Signal and Telegram, so people can reach the practice either by calling or by messaging that number.
 
@@ -18,7 +18,7 @@ The research tools (Worldora, Worldora Intelligence, Global Monitor) live in the
 
 ## Languages
 
-The site is published in German (default), French and English: `de/`, `fr/`, `en/`, each with the same five pages. The bare domain and the old root URLs redirect to `/de/` (see `routes` in `render.yaml`; root `index.html` is a meta-refresh fallback). Pages carry `hreflang` alternates and a DE/FR/EN switcher in the navigation; `sitemap.xml` lists all 15 URLs with alternates. Per-language strings that JavaScript needs (menu labels, contact-form messages) are `data-*` attributes in the HTML, so `main.js` is shared. German uses Swiss spelling (no ß).
+The site is published in German (default), French and English: `de/`, `fr/`, `en/`, each with the same six pages. The bare domain and the old root URLs redirect to `/de/` (see `routes` in `render.yaml`; root `index.html` is a meta-refresh fallback). Pages carry `hreflang` alternates and a DE/FR/EN switcher in the navigation; `sitemap.xml` lists all 18 URLs with alternates. Per-language strings that JavaScript needs (menu labels, contact-form messages) are `data-*` attributes in the HTML, so `main.js` is shared. German uses Swiss spelling (no ß).
 
 ## Tech stack
 
@@ -37,6 +37,6 @@ npx serve .
 `archive/` holds two earlier drafts of this same site concept, kept for reference:
 
 - `archive/v1-senioren-hilfe-draft/` — an earlier single-page draft (originally in a folder named "Senioren Hilfe", a leftover/misleading name — the content is the same IT-consulting pitch, not senior-specific).
-- `archive/v2-single-page-draft/` — a second single-page draft, closer to but still simpler than the current 5-page site.
+- `archive/v2-single-page-draft/` — a second single-page draft, closer to but still simpler than the current 6-page site.
 
 This repository's top-level pages are the most complete version.
