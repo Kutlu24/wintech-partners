@@ -1,12 +1,12 @@
 # Winterthur Tech Partners — Website-Konzept
 
-Ein 6-seitiges Website-Konzept für **Winterthur Tech Partners**, eine geplante IT-Support- und Cybersicherheits-Beratung für KMU, Arztpraxen und Anwaltskanzleien in Winterthur.
+Ein 7-seitiges Website-Konzept für **Winterthur Tech Partners**, eine geplante IT-Support- und Cybersicherheits-Beratung für KMU, Arztpraxen und Anwaltskanzleien in Winterthur.
 
 🇬🇧 English version: [README.md](README.md)
 
 ## Was es ist
 
-Ein statisches Website-Mockup: Startseite, Services, Über uns, Cybersecurity, Technik vor Ort und Kontakt, aufgebaut um ein Drei-Säulen-Angebot (IT-Support & Wartung, Cybersicherheit, strategische Beratung/digitale Transformation). Der Inhalt folgt dem ursprünglichen Projektbriefing für das Geschäftskonzept.
+Ein statisches Website-Mockup: Startseite, Services, Über uns, Cybersecurity, Technik vor Ort, Webdesign und Kontakt, aufgebaut um ein Drei-Säulen-Angebot (IT-Support & Wartung, Cybersicherheit, strategische Beratung/digitale Transformation). Der Inhalt folgt dem ursprünglichen Projektbriefing für das Geschäftskonzept.
 
 Echte Kontaktdaten (Telefon `+41 77 205 38 34`, E-Mail, Adresse) sind eingetragen. Die Kontaktseite und der Website-Assistent weisen darauf hin, dass dieselbe Nummer auch über WhatsApp, Signal und Telegram erreichbar ist — also sowohl telefonisch als auch per Nachricht.
 
@@ -14,7 +14,7 @@ Auf allen Seiten liegt ein kleiner Website-Assistent (`chatbot.js`): ein regelba
 
 ## Sprachen
 
-Die Website erscheint auf Deutsch (Standard), Französisch und Englisch: `de/`, `fr/`, `en/`, jeweils mit denselben sechs Seiten. Die Domain ohne Pfad und die alten Root-URLs leiten auf `/de/` weiter (`routes` in `render.yaml`; die `index.html` im Root ist ein Meta-Refresh-Fallback). Alle Seiten haben `hreflang`-Alternativen und einen DE/FR/EN-Umschalter in der Navigation; `sitemap.xml` listet alle 18 URLs mit Alternativen. Sprachabhängige Texte für JavaScript (Menü-Labels, Formularmeldungen) stehen als `data-*`-Attribute im HTML, `main.js` ist daher gemeinsam. Deutsch folgt der Schweizer Schreibweise (kein ß).
+Die Website erscheint auf Deutsch (Standard), Französisch und Englisch: `de/`, `fr/`, `en/`, jeweils mit denselben sieben Seiten. Die Domain ohne Pfad und die alten Root-URLs leiten auf `/de/` weiter (`routes` in `render.yaml`; die `index.html` im Root ist ein Meta-Refresh-Fallback). Alle Seiten haben `hreflang`-Alternativen und einen DE/FR/EN-Umschalter in der Navigation; `sitemap.xml` listet alle 21 URLs mit Alternativen. Sprachabhängige Texte für JavaScript (Menü-Labels, Formularmeldungen) stehen als `data-*`-Attribute im HTML, `main.js` ist daher gemeinsam. Deutsch folgt der Schweizer Schreibweise (kein ß).
 
 ## Technik
 

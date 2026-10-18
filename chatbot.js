@@ -34,6 +34,7 @@
                 services: "Leistungen",
                 cyber: "Cybersicherheit",
                 onsite: "Technik vor Ort",
+                webdesign: "Webdesign",
                 chatbotService: "Chatbot für meine Firma",
                 pricing: "Preise",
                 contact: "Kontakt",
@@ -42,9 +43,10 @@
             },
             answers: {
                 greeting: "Grüezi! Womit kann ich helfen?",
-                services: "Sieben Leistungen: IT-Support & Wartung, Cybersicherheit, Technik vor Ort, Geräte-Lifecycle-Management, Digitalisierung & Automatisierung, Kundenservice-Chatbot und strategische Beratung – für KMU, Arztpraxen und Anwaltskanzleien.",
+                services: "Acht Leistungen: IT-Support & Wartung, Cybersicherheit, Technik vor Ort, Webdesign, Geräte-Lifecycle-Management, Digitalisierung & Automatisierung, Kundenservice-Chatbot und strategische Beratung – für KMU, Arztpraxen und Anwaltskanzleien.",
                 cyber: "Enthalten sind Virenschutz & Endpoint-Security, Firewall-Konfiguration, Datensicherung und Datenverschlüsselung. Dazu eine Bestandsaufnahme Ihrer Infrastruktur. Die Bedrohung ist real – und wächst.",
                 onsite: "Technik vor Ort: Internetanschluss & Router, WLAN & Mesh, Kabel-TV & Streaming, Netzwerkverkabelung, Homeoffice-Arbeitsplätze und Smart-Home – bei Ihnen zu Hause oder im Betrieb.",
+                webdesign: "Webdesign & Website-Wartung: individuelle Websites, die auf dem Handy gut aussehen, plus Hosting, Domain, SSL, Updates und laufende Betreuung.",
                 chatbotService: "Für Ihre Website und Messenger: Assistent mit Wissensdatenbank und FAQ, Triage und Lead-Erfassung, Datenschutz by Design. So wie ich hier – nur mit Ihrem Inhalt.",
                 pricing: "Die Erstberatung ist kostenlos und unverbindlich. Danach ein fixes Angebot – ohne Abo-Falle. Schreiben Sie mir, was ansteht.",
                 area: "Winterthur und Umgebung, Schweiz.",
@@ -72,6 +74,7 @@
                 services: "Prestations",
                 cyber: "Cybersécurité",
                 onsite: "Services sur site",
+                webdesign: "Conception web",
                 chatbotService: "Un chatbot pour mon entreprise",
                 pricing: "Tarifs",
                 contact: "Contact",
@@ -80,9 +83,10 @@
             },
             answers: {
                 greeting: "Bonjour ! Que puis-je faire pour vous ?",
-                services: "Sept prestations : support informatique & maintenance, cybersécurité, services sur site, gestion du cycle de vie des appareils, digitalisation & automatisation, chatbot de service client et conseil stratégique – pour les PME, cabinets médicaux et juridiques.",
+                services: "Huit prestations : support informatique & maintenance, cybersécurité, services sur site, conception web, gestion du cycle de vie des appareils, digitalisation & automatisation, chatbot de service client et conseil stratégique – pour les PME, cabinets médicaux et juridiques.",
                 cyber: "Compris : antivirus & endpoint security, configuration du firewall, sauvegarde des données et chiffrement. Plus un état des lieux de votre infrastructure. La menace est réelle – et elle augmente.",
                 onsite: "Services sur site : connexion internet & routeur, Wi-Fi & réseau maillé, TV par câble & streaming, câblage réseau, postes de travail à domicile et maison connectée – chez vous ou en entreprise.",
+                webdesign: "Conception web & maintenance : sites web sur mesure, adaptés au mobile, plus hébergement, nom de domaine, SSL, mises à jour et entretien continu.",
                 chatbotService: "Pour votre site et vos messageries : assistant avec base de connaissances et FAQ, tri et capture de prospects, protection des données by design. Comme moi ici – mais avec votre contenu.",
                 pricing: "Le premier entretien est gratuit et sans engagement. Ensuite un devis fixe – sans abonnement piège. Écrivez-moi ce qu’il y a à faire.",
                 area: "Winterthur et sa région, Suisse.",
@@ -110,6 +114,7 @@
                 services: "Services",
                 cyber: "Cybersecurity",
                 onsite: "On-site services",
+                webdesign: "Web design",
                 chatbotService: "A chatbot for my business",
                 pricing: "Pricing",
                 contact: "Contact",
@@ -118,9 +123,10 @@
             },
             answers: {
                 greeting: "Hello! How can I help?",
-                services: "Seven services: IT support & maintenance, cybersecurity, on-site services, device lifecycle management, digitalisation & automation, customer-service chatbot and strategic consulting – for SMEs, medical and law practices.",
+                services: "Eight services: IT support & maintenance, cybersecurity, on-site services, web design, device lifecycle management, digitalisation & automation, customer-service chatbot and strategic consulting – for SMEs, medical and law practices.",
                 cyber: "Included: antivirus & endpoint security, firewall configuration, data backup and encryption. Plus a review of your infrastructure. The threat is real – and growing.",
                 onsite: "On-site services: internet connection & router, Wi-Fi & mesh, cable TV & streaming, network cabling, home-office workspaces and smart home – at your home or business.",
+                webdesign: "Web design & website maintenance: bespoke, mobile-friendly websites plus hosting, domain, SSL, updates and ongoing care.",
                 chatbotService: "For your website and messengers: an assistant with a knowledge base and FAQ, triage and lead capture, privacy by design. like this one here – only with your content.",
                 pricing: "The first consultation is free and without obligation. After that a fixed quote – no subscription trap. Write to us about what’s needed.",
                 area: "Winterthur and the surrounding area, Switzerland.",
@@ -177,6 +183,15 @@
                  "maison", "home office", "homeoffice", "bureau", "arbeitsplatz",
                  "steckdose", "koax", "koaxial", "satellit", "satellite", "antenne",
                  "wohnung", "haushalt", "immo", "technicien", "installateur"]
+        },
+        {
+            id: "webdesign",
+            kw: ["webdesign", "web design", "website", "webseite", "web seite", "homepage",
+                 "page web", "site web", "site internet", "internetseite", "wordpress",
+                 "wix", "squarespace", "shopify", "hosting", "domain", "ssl", "redesign",
+                 "relaunch", "responsive", "seo", "mobile friendly", "layout", "gestaltung",
+                 "refonte", "creation de site", "création de site", "website wartung",
+                 "website pflege", "site web maintenance", "website maintenance"]
         },
         {
             id: "chatbotService",
@@ -239,7 +254,7 @@
         }
     ];
 
-    var ORDER = ["phone", "contact", "cyber", "onsite", "chatbotService", "pricing", "area",
+    var ORDER = ["phone", "contact", "cyber", "onsite", "webdesign", "chatbotService", "pricing", "area",
                  "hours", "about", "services", "thanks", "bye", "greeting"];
 
     function wordsOf(text) {
@@ -466,6 +481,11 @@
             { label: T.chips.pricing, ask: T.chips.pricing },
             { label: T.chips.contact, ask: T.chips.contact }
         ],
+        webdesign: [
+            { label: T.chips.services, ask: T.chips.services },
+            { label: T.chips.pricing, ask: T.chips.pricing },
+            { label: T.chips.contact, ask: T.chips.contact }
+        ],
         chatbotService: [
             { label: T.chips.services, ask: T.chips.services },
             { label: T.chips.contact, ask: T.chips.contact }
@@ -508,6 +528,7 @@
         contact: "channels",
         cyber: "cyber",
         onsite: "onsite",
+        webdesign: "webdesign",
         chatbotService: "chatbotService",
         pricing: "pricing",
         area: "area",

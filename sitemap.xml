@@ -37,6 +37,15 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://wintech-partners.onrender.com/de/webdesign.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/webdesign.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/webdesign.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/webdesign.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/webdesign.html"/>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://wintech-partners.onrender.com/de/about.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/about.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/about.html"/>
@@ -91,6 +100,15 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://wintech-partners.onrender.com/fr/webdesign.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/webdesign.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/webdesign.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/webdesign.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/webdesign.html"/>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://wintech-partners.onrender.com/fr/about.html</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/about.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/about.html"/>
@@ -141,6 +159,15 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/onsite.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/onsite.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/onsite.html"/>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://wintech-partners.onrender.com/en/webdesign.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wintech-partners.onrender.com/de/webdesign.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://wintech-partners.onrender.com/fr/webdesign.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wintech-partners.onrender.com/en/webdesign.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://wintech-partners.onrender.com/de/webdesign.html"/>
     <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>
   </url>
