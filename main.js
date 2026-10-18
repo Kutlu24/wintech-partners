@@ -41,11 +41,24 @@
         });
 
         /* Reset when the layout returns to the wide header. */
-        var wide = window.matchMedia("(min-width: 901px)");
+        var wide = window.matchMedia("(min-width: 1161px)");
         var onChange = function (e) { if (e.matches) setMenu(false); };
         if (wide.addEventListener) wide.addEventListener("change", onChange);
         else if (wide.addListener) wide.addListener(onChange);
     }
+
+    /* The sticky header has three heights (wide two-row header, collapsed
+       single row, wrapped logo row), so anchors measure it at runtime
+       instead of relying on the static breakpoints. */
+    var header = document.querySelector(".main-header");
+    function syncHeaderHeight() {
+        if (!header) return;
+        document.documentElement.style.setProperty("--header-h", header.offsetHeight + "px");
+    }
+    syncHeaderHeight();
+    window.addEventListener("resize", syncHeaderHeight);
+    window.addEventListener("load", syncHeaderHeight);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(syncHeaderHeight);
 
     /* ------------------------------------------------------------------
        Contact form: there is no backend, so a valid submission opens the

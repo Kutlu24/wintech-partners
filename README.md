@@ -8,7 +8,7 @@ A 7-page marketing website concept for **Winterthur Tech Partners**, a proposed 
 
 A static business website mockup: home, services, about, cybersecurity, on-site services, web design, and contact pages, built around a three-pillar service offering (IT support & maintenance, cybersecurity, strategic/digital-transformation consulting). The content follows the original project brief for the business concept.
 
-Contact details are filled in: phone `+41 77 205 38 34` (a `tel:` link in the header, contact page and footer), email `wintechpartners@gmail.com`, and click-to-chat links for WhatsApp, Signal and Telegram on the contact page. The contact page and the site assistant note that the same number also works on WhatsApp, Signal and Telegram, so people can reach the practice either by calling or by messaging that number.
+Contact details are filled in: email `wintechpartners@gmail.com` and click-to-chat links for WhatsApp, Signal and Telegram (all three use the number `+41 77 205 38 34`, which only ever appears inside those messenger links). The header, contact page and footer offer those four channels; phone calls are not a contact channel. The contact page and the site assistant point people to them.
 
 A small site assistant (`chatbot.js`) sits on every page: a rule-based FAQ bot in DE/FR/EN that answers questions about services, pricing, cybersecurity and availability, and routes people to those contact channels. It is deliberately local and dependency-free — the site ships a strict Content-Security-Policy (`script-src 'self'`), so no remote model or third-party widget is possible, and none is needed. It doubles as a working demo of the Kundenservice-Chatbot service on the services page.
 

@@ -51,9 +51,9 @@ body {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1320px;
     margin: 0 auto;
-    padding: 0 clamp(20px, 4vw, 24px);
+    padding: 0 clamp(20px, 4vw, 40px);
 }
 
 a { color: inherit; text-decoration: none; }
@@ -192,16 +192,23 @@ p { color: var(--text-muted); }
     font-family: var(--font-mono);
     color: var(--text-muted);
 }
-.header-contact .header-phone {
+.header-channels {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    color: var(--text-muted);
-    white-space: nowrap;
-    transition: color var(--transition);
+    gap: 4px;
 }
-.header-contact .header-phone i { color: var(--brass-dark); font-size: 0.95em; }
-.header-contact .header-phone:hover { color: var(--brass-dark); }
+.header-channels a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    color: var(--text-muted);
+    transition: all var(--transition);
+}
+.header-channels a:hover { color: var(--brass-dark); background: var(--brass-soft); }
+.header-channels i { font-size: 1.05rem; }
 
 /* CTA inside the collapsed mobile menu (shown only when the panel exists) */
 .nav-cta-item { display: none; }
@@ -332,6 +339,17 @@ p { color: var(--text-muted); }
     border: 1px solid var(--border);
     border-radius: 999px;
     padding: 4px 12px;
+}
+/* keep the copy of a full-width final card readable */
+.references-section .value-card p { max-width: 680px; margin-inline: auto; }
+/* A lone final card spans the whole row instead of leaving a gap.
+   The :nth-child() guards make the rule fire only when the card count
+   actually leaves one card on its own for the active column count. */
+@media (min-width: 1104px) {
+    .references-section .value-card:last-child:nth-child(3n+1) { grid-column: 1 / -1; }
+}
+@media (min-width: 760px) and (max-width: 1103px) {
+    .references-section .value-card:last-child:nth-child(2n+1) { grid-column: 1 / -1; }
 }
 
 /* ─── SECTION TITLES ──────────────────────────────── */
@@ -557,20 +575,19 @@ textarea:focus-visible {
 /* ─── RESPONSIVE ──────────────────────────────────── */
 
 /* Collapse the primary menu into a toggle panel only when JS is available
-   (main.js sets .js on <html>); without JS the links simply wrap. */
-@media (max-width: 1040px) {
-    .main-nav { gap: 14px; }
-    .header-contact { gap: 12px; }
-    .header-contact .btn { padding: 12px 18px; font-size: 0.95rem; }
-}
-
-@media (max-width: 900px) {
+   (main.js sets .js on <html>); without JS the links simply wrap. Above
+   this breakpoint the nav row (links + language switcher) sits under the
+   logo row. */
+@media (max-width: 1160px) {
     :root { --header-h: 64px; }
+
+    .main-nav { gap: 14px; }
+    .header-contact { order: 2; margin-left: auto; gap: 12px; }
+    .header-contact .btn { padding: 12px 18px; font-size: 0.95rem; }
 
     html.js .nav-toggle { display: inline-flex; order: 3; }
 
     .logo { order: 1; font-size: 1.15rem; }
-    .header-contact { order: 2; margin-left: auto; }
     .nav-toggle { order: 3; }
 
     .nav-links { order: 4; }
@@ -604,12 +621,20 @@ textarea:focus-visible {
     html.js .nav-links .nav-cta-item a.btn { background: var(--brass); color: var(--white); box-shadow: none; }
     html.js .nav-links .nav-cta-item a.btn:hover { background: var(--brass-dark); color: var(--white); }
 
+    html.js .nav-links .lang-switch {
+        margin: 4px 0 0;
+        padding: 10px 6px 4px;
+        border-left: 0;
+        border-top: 1px solid var(--border);
+    }
+    html.js .nav-links .lang-switch a { display: inline-flex; gap: 8px; padding: 8px 14px; font-size: 0.95rem; }
+    html.js .nav-links .lang-switch .flag { width: 26px; height: 18px; }
+}
+
+@media (max-width: 900px) {
     .experience-grid { grid-template-columns: 1fr; }
     .experience-image { order: -1; }
     h1 { font-size: clamp(2rem, 5.5vw, 2.5rem); }
-    .header-contact .phone-text { display: none; }
-    .header-contact .header-phone { padding: 8px; min-width: 44px; min-height: 44px; justify-content: center; }
-    .header-contact .header-phone .phone-text { display: none; }
     .services-section { padding-top: 60px; }
     .values-section { padding: 60px 0; }
 }
@@ -621,6 +646,9 @@ textarea:focus-visible {
     .cta-buttons .btn { width: 100%; }
     .hero-buttons, .cta-buttons { flex-direction: column; align-items: stretch; }
 
+    /* only the primary quick channel fits next to the CTA and the toggle */
+    .header-channels a:not(:first-child) { display: none; }
+    .header-channels a { width: 44px; height: 44px; }
     .header-contact .btn { padding: 11px 14px; font-size: 0.9rem; }
     .logo { font-size: 1.05rem; gap: 8px; }
     .logo-mark { height: 30px; }
@@ -634,7 +662,7 @@ textarea:focus-visible {
 }
 
 @media (max-width: 420px) {
-    /* the header CTA cannot fit next to the phone icon and the toggle on
+    /* the header CTA cannot fit next to the channel icons and the toggle on
        very narrow screens - it lives in the menu panel instead */
     .header-contact .btn { display: none; }
     .logo { font-size: 1rem; }
@@ -673,25 +701,12 @@ textarea:focus-visible {
     color: var(--brass-dark);
     background: var(--brass-soft);
 }
-@media (max-width: 900px) {
-    html.js .nav-links .lang-switch {
-        margin: 4px 0 0;
-        padding: 10px 6px 4px;
-        border-left: 0;
-        border-top: 1px solid var(--border);
-    }
-    html.js .nav-links .lang-switch a { display: inline-block; padding: 8px 14px; font-size: 0.95rem; }
-}
 .lang-switch .flag {
     width: 20px;
     height: 14px;
     border-radius: 2px;
     flex-shrink: 0;
     box-shadow: 0 0 0 1px rgba(28, 26, 22, 0.2);
-}
-@media (max-width: 900px) {
-    html.js .nav-links .lang-switch a { display: inline-flex; gap: 8px; }
-    .lang-switch .flag { width: 26px; height: 18px; }
 }
 
 .section-more { text-align: center; margin-top: 24px; }

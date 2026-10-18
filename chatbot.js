@@ -29,7 +29,7 @@
             thinking: "Schreibt …",
             you: "Sie",
             bot: "Assistent",
-            channels: "Sie erreichen mich unter +41 77 205 38 34 – auch per WhatsApp, Signal und Telegram über dieselbe Nummer – oder per E-Mail.",
+            channels: "Am schnellsten erreichen Sie mich per WhatsApp, Signal oder Telegram – oder per E-Mail.",
             chips: {
                 services: "Leistungen",
                 cyber: "Cybersicherheit",
@@ -54,7 +54,7 @@
                 hours: "Ich melde mich werktags in der Regel innerhalb weniger Stunden. Schreiben Sie jederzeit – die Nachricht erreicht mich auch abends.",
                 thanks: "Gerne. Wenn noch etwas offen ist, fragen Sie einfach.",
                 bye: "Bis dann. Schreiben Sie, wenn Sie bereit sind.",
-                phone: "Sie erreichen mich unter +41 77 205 38 34. Dieselbe Nummer funktioniert auch über WhatsApp, Signal und Telegram – schreiben Sie mir dort einfach."
+                phone: "Ein Anruf ist leider nicht möglich – schreiben Sie mir per WhatsApp, Signal oder Telegram, oder per E-Mail. Ich melde mich werktags in der Regel innerhalb weniger Stunden."
             }
         },
         fr: {
@@ -69,7 +69,7 @@
             thinking: "Écrit …",
             you: "Vous",
             bot: "Assistant",
-            channels: "Vous pouvez m’appeler au +41 77 205 38 34 – ce même numéro fonctionne aussi sur WhatsApp, Signal et Telegram – ou m’écrire par e-mail.",
+            channels: "Le plus rapide : WhatsApp, Signal ou Telegram – ou par e-mail.",
             chips: {
                 services: "Prestations",
                 cyber: "Cybersécurité",
@@ -94,7 +94,7 @@
                 hours: "Je réponds en général en quelques heures les jours ouvrables. Écrivez quand vous voulez – le message m’arrive aussi le soir.",
                 thanks: "Avec plaisir. S’il reste une question, demandez simplement.",
                 bye: "À bientôt. Écrivez-moi quand vous êtes prêt.",
-                phone: "Vous pouvez m’appeler au +41 77 205 38 34. Ce même numéro fonctionne aussi sur WhatsApp, Signal et Telegram – écrivez-moi simplement là-bas."
+                phone: "Pas d’appel possible – écrivez-moi via WhatsApp, Signal ou Telegram, ou par e-mail. Je réponds en général en quelques heures les jours ouvrables."
             }
         },
         en: {
@@ -109,7 +109,7 @@
             thinking: "Typing …",
             you: "You",
             bot: "Assistant",
-            channels: "Call us on +41 77 205 38 34 – the same number also works on WhatsApp, Signal and Telegram – or send an email.",
+            channels: "The quickest way to reach us is WhatsApp, Signal or Telegram – or email.",
             chips: {
                 services: "Services",
                 cyber: "Cybersecurity",
@@ -134,7 +134,7 @@
                 hours: "We usually reply within a few hours on working days. Write any time – your message reaches us in the evening too.",
                 thanks: "Happy to help. If anything is still open, just ask.",
                 bye: "Talk soon. Write when you’re ready.",
-                phone: "Call us on +41 77 205 38 34. The same number also works on WhatsApp, Signal and Telegram – just write to us there."
+                phone: "We don’t take phone calls – message us on WhatsApp, Signal or Telegram, or send an email. We usually reply within a few hours on working days."
             }
         }
     };
