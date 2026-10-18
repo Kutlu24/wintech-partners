@@ -993,3 +993,302 @@ textarea:focus-visible {
     }
     .wtp-chat-bubble, .wtp-chat-note, .wtp-chat-channels { max-width: 94%; }
 }
+
+/* =============================================
+   PREMIUM MOTION & POLISH LAYER (fx)
+   Added together with fx.js + self-hosted Lenis/SplitType vendors.
+   Everything here degrades cleanly: the classes that hide anything
+   (html.fx-on / html.fx-split) are only set by fx.js after the matching
+   capability check has passed, so no-JS and reduced-motion visitors see
+   the plain static design.
+   ============================================= */
+
+:root {
+    --fx-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23g)' opacity='0.55'/%3E%3C/svg%3E");
+    --fx-ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* Lenis drives the scroll itself — native smooth scrolling would fight it.
+   Without fx.js the html.lenis-on class never appears and the site keeps
+   its original smooth anchor behaviour. */
+html.lenis-on { scroll-behavior: auto; }
+
+/* hash targets (services page navigation) always clear the sticky header,
+   with or without the motion layer */
+:target { scroll-margin-top: calc(var(--header-h) + 12px); }
+
+/* ── Scroll reveals ─────────────────────────────────── */
+html.fx-on .fx-reveal {
+    opacity: 0;
+    transform: translateY(26px);
+    transition:
+        opacity 0.65s ease var(--fx-d, 0s),
+        transform 0.65s var(--fx-ease) var(--fx-d, 0s);
+}
+html.fx-on .fx-reveal.is-in { opacity: 1; transform: none; }
+
+/* ── Headline word reveal ───────────────────────────── */
+html.fx-split h1 .word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(0.55em);
+    transition:
+        opacity 0.55s ease var(--fx-d, 0s),
+        transform 0.55s var(--fx-ease) var(--fx-d, 0s);
+}
+html.fx-split h1.is-in .word { opacity: 1; transform: none; }
+
+@media print {
+    html.fx-on .fx-reveal,
+    html.fx-split h1 .word { opacity: 1 !important; transform: none !important; }
+}
+
+/* ── Typography polish ──────────────────────────────── */
+h1, h2 { letter-spacing: -0.01em; }
+.hero-content h1 {
+    font-size: clamp(2.4rem, 1.5rem + 3vw, 3.55rem);
+    line-height: 1.16;
+}
+@media (max-width: 900px) {
+    .hero-content h1 { font-size: clamp(2.05rem, 6vw, 2.6rem); }
+}
+
+/* eyebrow gets a brass tick above it — the technical-drawing register of
+   the palette, consistent with the section rules below */
+.eyebrow { position: relative; padding-top: 15px; }
+.eyebrow::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 34px; height: 2px;
+    background: var(--brass);
+}
+
+/* ── Section titles ─────────────────────────────────── */
+.section-title { position: relative; padding-top: 22px; }
+.section-title::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 56px; height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--brass), rgba(169, 98, 44, 0.12));
+}
+
+/* ── Buttons: lift + light sweep ────────────────────── */
+.btn {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 14px -8px rgba(28, 26, 22, 0.45);
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s var(--fx-ease);
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    top: -25%; bottom: -25%;
+    left: -80%;
+    width: 45%;
+    background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.38), transparent);
+    transform: skewX(-18deg);
+    transition: left 0.55s ease;
+    pointer-events: none;
+}
+.btn:hover::before { left: 140%; }
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px -10px rgba(28, 26, 22, 0.5);
+}
+.btn:active { transform: translateY(0); box-shadow: var(--shadow); }
+
+/* ── Header: scroll progress + settled shadow ───────── */
+.main-header { transition: box-shadow 0.3s ease; }
+.main-header.is-scrolled { box-shadow: 0 10px 26px -16px rgba(28, 26, 22, 0.4); }
+.scroll-progress {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--brass-dark), var(--brass));
+    transform: scaleX(0);
+    transform-origin: left center;
+    pointer-events: none;
+}
+
+/* ── Nav underline (wide header only) ───────────────── */
+@media (min-width: 1161px) {
+    .nav-links > li:not(.lang-switch) > a:not(.btn) {
+        position: relative;
+    }
+    .nav-links > li:not(.lang-switch) > a:not(.btn)::after {
+        content: "";
+        position: absolute;
+        left: 0; right: 0; bottom: -7px;
+        height: 2px;
+        background: var(--brass);
+        transform: scaleX(0);
+        transform-origin: left center;
+        transition: transform 0.3s var(--fx-ease);
+    }
+    .nav-links > li:not(.lang-switch) > a:not(.btn):hover::after,
+    .nav-links > li:not(.lang-switch) > a.active::after {
+        transform: scaleX(1);
+    }
+    .nav-links a.active { box-shadow: none; }
+}
+
+/* ── Cards: icon tiles + deeper hover ───────────────── */
+.service-card {
+    transition:
+        transform 0.35s var(--fx-ease),
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 20px 38px -16px rgba(28, 26, 22, 0.28),
+        inset 0 0 0 1px rgba(169, 98, 44, 0.3);
+}
+.service-card .card-icon {
+    display: inline-grid;
+    place-items: center;
+    width: 52px; height: 52px;
+    margin-bottom: 8px;
+    border-radius: 13px;
+    background: var(--brass-soft);
+    border: 1px solid #ead7c2;
+    color: var(--brass-dark);
+    font-size: 1.35rem;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s var(--fx-ease);
+}
+.service-card:hover .card-icon {
+    background: var(--brass);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.value-card {
+    transition:
+        transform 0.35s var(--fx-ease),
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 38px -16px rgba(28, 26, 22, 0.28);
+    border-color: #ddd2c0;
+}
+.value-card > i {
+    display: inline-grid;
+    place-items: center;
+    width: 58px; height: 58px;
+    margin: 0 auto 18px;
+    border-radius: 16px;
+    background: var(--brass-soft);
+    border: 1px solid #ead7c2;
+    color: var(--brass-dark);
+    font-size: 1.5rem;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s var(--fx-ease);
+}
+.value-card:hover > i {
+    background: var(--brass);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* ── Experience photo: mounted print look ───────────── */
+.experience-image img {
+    border: 6px solid var(--surface);
+    box-shadow:
+        var(--shadow-md),
+        0 0 0 1px var(--border);
+}
+
+/* ── Hero: brass light + paper grain ────────────────── */
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: var(--fx-grain);
+    opacity: 0.05;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: 0;
+}
+.hero-section::after {
+    content: "";
+    position: absolute;
+    top: -25%; right: -8%;
+    width: 62vw; height: 78vh;
+    background: radial-gradient(closest-side, rgba(169, 98, 44, 0.17), transparent 72%);
+    pointer-events: none;
+    z-index: 0;
+}
+.hero-circuit { z-index: 0; }
+
+/* ── Dark page header: brass glow ───────────────────── */
+.page-header {
+    position: relative;
+    overflow: hidden;
+}
+.page-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(1000px 460px at 88% -20%, rgba(169, 98, 44, 0.3), transparent 65%),
+        radial-gradient(700px 380px at 8% 130%, rgba(169, 98, 44, 0.14), transparent 70%);
+    pointer-events: none;
+}
+.page-header .container { position: relative; z-index: 1; }
+
+/* ── Final CTA: brass glow + hairline ───────────────── */
+.final-cta-section {
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid rgba(169, 98, 44, 0.45);
+}
+.final-cta-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(760px 420px at 50% 135%, rgba(169, 98, 44, 0.4), transparent 70%),
+        radial-gradient(560px 320px at 12% -30%, rgba(169, 98, 44, 0.16), transparent 70%);
+    pointer-events: none;
+}
+.final-cta-section .container { position: relative; z-index: 1; }
+
+/* ── Contact details: accent strip ──────────────────── */
+.contact-details { position: relative; overflow: hidden; }
+.contact-details::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--brass), rgba(169, 98, 44, 0.1));
+}
+
+/* ── Footer hairline ────────────────────────────────── */
+.main-footer { border-top: 1px solid rgba(169, 98, 44, 0.45); }
+
+/* ── Chat launcher: gentle attention pulse ──────────── */
+.wtp-chat-launcher { position: relative; }
+.wtp-chat-launcher::after {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(169, 98, 44, 0.5);
+    animation: fx-pulse 2.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    pointer-events: none;
+}
+.wtp-chat.is-open .wtp-chat-launcher::after { animation: none; opacity: 0; }
+@keyframes fx-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(169, 98, 44, 0.5); }
+    60% { box-shadow: 0 0 0 13px rgba(169, 98, 44, 0); }
+}
