@@ -315,6 +315,24 @@ p { color: var(--text-muted); }
     padding: 4px 14px;
     margin-bottom: 16px;
 }
+.ref-sublist {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+.ref-sublist li {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--brass-dark);
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 12px;
+}
 
 /* ─── SECTION TITLES ──────────────────────────────── */
 .section-title { text-align: left; margin-bottom: 10px; }
